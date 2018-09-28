@@ -2,7 +2,7 @@
 
 [tutorial](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
 
-## Preparazione
+## Preparazione di un repo locale da sincronizzare su GitHub
 
 1. `md <directory di lavoro>`
 1. `cd <directory di lavoro>`
@@ -16,7 +16,7 @@
 
 1. `git status`
 1. `git add <nome del file> # oppure git add --all`
-1. `git commit -m "<messaggio>"`
+1. `git commit -m "<messaggio>" # usare messaggi nella forma "se applicato, questo commit farà ..."`
 1. `git log # visualizzare l'elenco dei commit`
 1. `git push -u origin master # richiede la password di github`
 
