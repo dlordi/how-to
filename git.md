@@ -17,6 +17,7 @@
 1. `git status`
 1. `git add <nome del file> # oppure git add --all`
 1. `git commit -m "<messaggio>"`
+1. `git log # visualizzare l'elenco dei commit`
 1. `git push -u origin master # richiede la password di github`
 
 ## Clonare un repo da GitHub
