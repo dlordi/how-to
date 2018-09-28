@@ -4,22 +4,29 @@
 
 ## Preparazione di un repo locale da sincronizzare su GitHub
 
-1. `md <directory di lavoro>`
-1. `cd <directory di lavoro>`
-1. `git init`
-1. `git config user.email "domenico.lordi@gmail.com" # si può usare l'opzione --global`
-1. `git config user.name "Domenico Lordi" # si può usare l'opzione --global`
-1. `# <creare un repo su github e scegliere di "push an existing repository from command line">`
-1. `git remote add origin https://github.com/<utente>/<repo su github>`
+```sh
+md <directory di lavoro>
+cd <directory di lavoro>
+git init
+git config user.email "domenico.lordi@gmail.com" # si può usare l'opzione --global
+git config user.name "Domenico Lordi" # si può usare l'opzione --global
+# <creare un repo su github e scegliere di "push an existing repository from command line">
+git remote add origin https://github.com/dlordi/<repo su github> # "origin" è l'alias locale che viene dato al repo remoto (la convenzione è usare "origin")
+git remove -v # visualizza un elenco di repo remoti
+```
 
 ## Utilizzo
 
-1. `git status`
-1. `git add <nome del file> # oppure git add --all`
-1. `git commit -m "<messaggio>" # usare messaggi nella forma "se applicato, questo commit farà ..."`
-1. `git log # visualizzare l'elenco dei commit`
-1. `git push -u origin master # richiede la password di github`
+```sh
+git status
+git add <nome del file> # oppure git add --all
+git commit -m "<messaggio>" # usare messaggi nella forma "se applicato, questo commit farà ..."
+git log # visualizzare l'elenco dei commit
+git push -u origin master # richiede la password di github; i push successivi possono essere fatti anche solo con "git push"
+```
 
 ## Clonare un repo da GitHub
 
-1. `git clone <url del repo> # crea la directory in cui clona il repo`
+```sh
+git clone <url del repo> # crea la directory in cui clona il repo
+```
