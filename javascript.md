@@ -1,5 +1,9 @@
 
+# Varie
+
 * è stato introdotto nel 1995
+
+# Tipi di dato
 
 * ha 6 tipi di base: `number` (sempre a 64 bit), `string`, `boolean`, `object`, `function` e `undefined`
 
@@ -39,7 +43,7 @@ undefined === undefined
 
 * quando una funzione viene chiamata come metodo di un oggetto, la keyword `this` (all'interno della funzione) fa riferimento all'oggetto a cui la funzione appartiene
 
-* se si usa `Object.create` passando come parametro `null` si crea un oggetto *SENZA* prototipo! (può essere utile per creare dei "veri" dizionari che non hanno metodi e proprietà di `Object`)
+* se si usa `Object.create` passando come parametro `null` si crea un oggetto **SENZA** prototipo! (può essere utile per creare dei "veri" dizionari che non hanno metodi e proprietà di `Object`)
 
 questo codice javascript
 ```js
@@ -49,6 +53,24 @@ equivale a questo codice python
 ```py
 d = dict()
 ```
+
+# Funzioni
+
+* hoisting: meccanismo per cui se si usa var all'interno di una function, la variabile risulta dichiarata (**MA NON DEFINITA**) già all'inizio della funzione
+```js
+function () {
+	console.log(a); // stampa undefined
+	var a = 3;
+}
+```
+
+* **lexical scoping**: una funzione ha accesso alle variabili definite al suo interno e alle variabili definite all'interno delle funzioni che la contengono, fino ad arrivare allo scoping globale
+
+* `function f () {}` è una function declaration, mentre `f = function () {}` è una function expression
+
+* all'interno di una funzione la variabile `arguments` contiene tutti i parametri passati; è molto simile ad un array ma **NON** è un array (quindi alcuni metodi non sono disponibili)
+
+# Oggetti
 
 * l'eredità può essere realizzata facendo
 ```js
@@ -67,12 +89,4 @@ Derived.prototype = Object.create(Base.prototype);
 
 ```js
 Object.prototype.hasOwnProperty.call(object, key) // al posto di object.hasOwnProperty(key)
-```
-
-* hoisting: meccanismo per cui se si usa var all'interno di una function, la variabile risulta dichiarata (**MA NON DEFINITA**) già all'inizio della funzione
-```js
-function () {
-	console.log(a); // stampa undefined
-	var a = 3;
-}
 ```
