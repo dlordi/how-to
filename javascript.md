@@ -37,7 +37,7 @@ undefined === undefined
 
 * nel confronto fra oggetti, l'operatore `==` restituisce `true` solo se i due oggetti puntano allo stesso elemento (se sono oggetti diversi, anche se hanno lo stesso contenuto, restituisce `false`)
 
-* quando una funzione viene chiamata come metodo di un oggetto, la keyword `this` (all'interno della funzione) fa riferimento all'oggetto
+* quando una funzione viene chiamata come metodo di un oggetto, la keyword `this` (all'interno della funzione) fa riferimento all'oggetto a cui la funzione appartiene
 
 * se si usa `Object.create` passando come parametro `null` si crea un oggetto *SENZA* prototipo! (può essere utile per creare dei "veri" dizionari che non hanno metodi e proprietà di `Object`)
 
@@ -55,10 +55,24 @@ d = dict()
 function Base(/* ... */) {
 	/* ... */
 }
+
 function Derived(/* ... */) {
 	Base.call(this, /* ... */);
 }
 Derived.prototype = Object.create(Base.prototype);
 ```
-**NON CHIARO**: perché viene usato Object.create e non si fa semplicemente
-Derived.prototype = Base.prototype???
+**NON CHIARO**: perché viene usato Object.create e non si fa semplicemente `Derived.prototype = Base.prototype`???
+
+* conviene chiamare i metodi di Object.prototype usando la call per evitare che possano essere ridefiniti in un oggetto
+
+```js
+Object.prototype.hasOwnProperty.call(object, key) // al posto di object.hasOwnProperty(key)
+```
+
+* hoisting: meccanismo per cui se si usa var all'interno di una function, la variabile risulta dichiarata (**MA NON DEFINITA**) già all'inizio della funzione
+```js
+function () {
+	console.log(a); // stampa undefined
+	var a = 3;
+}
+```
