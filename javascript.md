@@ -1,7 +1,7 @@
 
 # Varie
 
-* è stato introdotto nel 1995
+* è stato sviluppato nel 1995 da Brendan Eich
 
 # Tipi di dato
 
