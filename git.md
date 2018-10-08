@@ -12,7 +12,7 @@ git config user.email "domenico.lordi@gmail.com" # si può usare l'opzione --glo
 git config user.name "Domenico Lordi" # si può usare l'opzione --global
 # <creare un repo su github e scegliere di "push an existing repository from command line">
 git remote add origin https://github.com/dlordi/<repo su github> # "origin" è l'alias locale che viene dato al repo remoto (la convenzione è usare "origin")
-git remove -v # visualizza un elenco di repo remoti
+git remote -v # visualizza un elenco di repo remoti
 ```
 
 ## Utilizzo
