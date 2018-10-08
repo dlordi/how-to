@@ -30,3 +30,10 @@ git push -u origin master # richiede la password di github; i push successivi po
 ```sh
 git clone <url del repo> # crea la directory in cui clona il repo
 ```
+
+## Togliere un repository remoto dall'elenco di quelli prensenti nel repo locale
+
+```sh
+git remote -v # per vedere quali sono i nomi dei repo remoti
+git remote rm <nome del repo>
+```
