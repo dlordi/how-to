@@ -5,10 +5,13 @@ L'idea di base è che ogni app rappresenta una sorta di macchina virtuale/contai
 
 ## Python
 
-Su heroku si possono installare solo app WSGI; nel `Procfile` deve essere indicato
-
+Su heroku si possono installare solo app WSGI; nel `Procfile` deve essere indicato il comando di avvio del servizio; ad esempio, se si usa web.py:
 ```Procfile
 web: python code.py $PORT
+```
+se si usa gunicorn
+```Procfile
+web: gunicorn -w 4 myapp:app
 ```
 
 in questo caso, `code.py` è il file di partenza dell'applicativo
@@ -28,6 +31,15 @@ Werkzeug==0.14
 gunicorn==19.9.0
 ```
 
+## Node.js
+
+si può indicare il comando di partenza sia nel `Procfile` che in `package.json`; se si usa `package.json` bisogna mettere il comando nella sezione `scripts` e chiamarlo `web`, ad esempio:
+```json
+"scripts": {
+  "web": "node main.js"
+}
+```
+
 ### Utility a riga di comando
 
 vedi anche https://becominghuman.ai/steps-to-create-and-deploy-python-web-app-on-heroku-95b6c4f570b0
@@ -35,11 +47,15 @@ vedi anche https://becominghuman.ai/steps-to-create-and-deploy-python-web-app-on
 ```sh
 heroku login # This will ask you to enter email id and password
 
-heroku create #  This will create an application in Heroku which you can see on Heroku Dashboard
+heroku create # This will create an application in Heroku which you can see on Heroku Dashboard
+git remote -v # to be sure remote heroku repository has been added
 
-git add . #Add all the files
+touch .gitignore
+git init
 
-git commit -m "App ready to deploy" # Commit the code
+git add . # Add all the files
+
+git commit -m "initial commit" # Commit the code
 
 git push heroku master # This will push the entire app on Heroku Server
 
