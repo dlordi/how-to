@@ -54,6 +54,23 @@ equivale a questo codice python
 d = dict()
 ```
 
+## Regole per la conversione dei tipi: esempi
+```js
+5 - '4' === 1 // l'operatore - si applica solo fra numeri, quindi prova a convertire entrambi gli operandi in numeri ed esegue l'operazione
+
+5 + '4' === '54' // ? perché si sceglie di fare la concatenazione?
+
++!{}[true] === 1 // la sequenza di operazioni è: +(!({}[true])); quella più interna, {}[true], produce undefined; !undefined è una espressione booleana che viene valutata in true; +true è una espressione numerica che viene valutata in 1
+
++[3.14] === 3.14 //
+
++[3.14, 2.71] === NaN //
+
+7 - 'a' === NaN // l'operatore - si applica solo fra numeri, quindi prova a convertire entrambi gli operandi in numeri; il secondo (cioé 'a') non può essere convertito in numero, quindi genera Nan e a questo punto tutte le successive operazioni generano NaN
+
+7 / 0 === Infinity // la divisione per 0 produce Infinity
+```
+
 # Funzioni
 
 * hoisting: meccanismo per cui se si usa var all'interno di una function, la variabile risulta dichiarata (**MA NON DEFINITA**) già all'inizio della funzione
