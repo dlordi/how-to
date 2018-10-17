@@ -5,3 +5,4 @@
 * [heroku](heroku.md)
 * [firebase](firebase.md)
 * [oracle](oracle.md)
+* [python](python.md)
