@@ -87,6 +87,37 @@ function () {
 
 * all'interno di una funzione la variabile `arguments` contiene tutti i parametri passati; è molto simile ad un array ma **NON** è un array (quindi alcuni metodi non sono disponibili)
 
+* `bind`: è un metodo che restituisce una funzione in cui il contesto (`this`) viene forzato; ad esempio:
+```js
+function f() {
+  console.log(this.value);
+}
+```
+
+l'esecuzione di `f` fa riferimento a contesti diversi in base al momento della chiamata
+
+```js
+const g = f.bind({value: 42}); // stampa 42
+```
+
+l'esecuzione di `g` farà sempre riferimento all'oggetto passato a `bind`
+
+* `call`: permette di richiamare una funzione forzando il contesto (`this`); eventuali parametri da passare alla funzione possono essere indicati di seguito; notare che a differenza di `bind` non viene restituita una nuova funzione: semplicemente la funzione originale viene richiamata specificando contesto e parametri; esempio:
+```js
+function f(a, b, c) {
+  console.log(this.value, a, b, c);
+}
+f.call({value: 42}, 1, 2, 3); // stampa 42 1 2 3
+```
+
+* `apply`: simile a `call`, ma i parametri da passare devono essere in un array; esempio:
+```js
+function f(a, b, c) {
+  console.log(this.value, a, b, c);
+}
+f.apply({value: 42}, [1, 2, 3]); // stampa 42 1 2 3
+```
+
 # Oggetti
 
 * l'eredità può essere realizzata facendo
@@ -100,7 +131,7 @@ function Derived(/* ... */) {
 }
 Derived.prototype = Object.create(Base.prototype);
 ```
-**NON CHIARO**: perché viene usato Object.create e non si fa semplicemente `Derived.prototype = Base.prototype`???
+**NON CHIARO**: perché viene usato `Object.create` e non si fa semplicemente `Derived.prototype = Base.prototype`???
 
 * conviene chiamare i metodi di Object.prototype usando la call per evitare che possano essere ridefiniti in un oggetto
 
