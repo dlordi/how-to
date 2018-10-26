@@ -27,10 +27,18 @@ rpm -ql <nome pacchetto>
 
 # YUM
 
+* cancella la cache locale, forzando tutte le seguenti operazioni a consultare i repository
 ```sh
-yum whatprovides */<nome file>
+yum clean all
 ```
 
+* cerca il pacchetto che contiene il file
+```sh
+yum whatprovides "*/<nome file>"
+yum provides "*/<nome file>"
+```
+
+* elenco dei pacchetti relativi ad `openssl`
 ```sh
 yum --showduplicates list openssl
 ```
