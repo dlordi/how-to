@@ -53,6 +53,9 @@ git remote -v # to be sure remote heroku repository has been added
 touch .gitignore
 git init
 
+git config user.email "domenico.lordi@gmail.com"
+git config user.name "Domenico Lordi"
+
 git add . # Add all the files
 
 git commit -m "initial commit" # Commit the code
@@ -65,5 +68,5 @@ heroku ps:scale web=1 # This is to ensure that at least one instance of an app i
 
 heroku open # Visit the app through generated URL or with the above command
 
-heroku logs # This is to check the logs, if anything goes wrong.
+heroku logs --tail # This is to check the logs, if anything goes wrong.
 ```
