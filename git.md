@@ -21,7 +21,7 @@ git remote -v # visualizza un elenco di repo remoti
 git status
 git add $NOME_DEL_FILE # oppure "git add --all" per aggiungere tutti i file, anche in directory di livello superiore oppure "git add ." per aggiugere tutti i file dalla directory corrente e sottodirectory
 git commit -m "$MESSAGGIO" # usare messaggi nella forma "se applicato, questo commit farà ..."
-git log # visualizzare l'elenco dei commit
+git log # visualizzare l'elenco dei commit; se si aggiunge -p visualizza anche le diff
 git push -u origin master # richiede la password di github; i push successivi possono essere fatti anche solo con "git push"
 ```
 
