@@ -42,3 +42,23 @@ unicode.encode() # da una stringa genera una sequenza di byte
 bytes.decode() # da una sequenza di byte genera una stringa
 str.encode() # da una stringa genera una sequenza di byte
 ```
+
+## set
+
+inizializzazione
+
+```py
+nuovo_set = set()
+altro_set = {'elem1', 'elem2'}
+```
+
+il set è immutable, una volta creato non è possibile modificarne gli elementi contenuti, ma è possibile aggiungerne altri o cancellare quelli esistenti
+
+```py
+nuovo_set.add('elem3')
+altro_set.remove('elem1')
+altro_set.discard('elem4') # a differenza di remove, discard non genera un errore se l'elemento non esiste nel set
+altro_set.pop() # pop rimuove e restituisce un elemento qualsiasi (genera un errore se il set è vuoto)
+altro_set.clear() # cancella tutti gli elementi presenti nel set
+```
+
