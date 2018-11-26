@@ -1,35 +1,43 @@
 # UbuntuOnWindows:
 
-## Download Updated Information About Available Packages
+## Il filesystem di UbuntuOnWindows è in
+`C:\Users\Domenico Lordi\AppData\Local\lxss\rootfs`
+
+## Scaricare informazioni aggiornate su tutti i pacchetti disponibili
 ```sh
 sudo apt-get update
 ```
 
-## Install an Application Package
-    sudo apt-get install packagename (Replace “packagename” with the package’s name.)
+## Installare un pacchetto
+```sh
+sudo apt-get install $PACKAGENAME
+```
 
-## Uninstall an Application Package
-    sudo apt-get remove packagename (Replace “packagename” with the package’s name.)
+## Disinstallare un pacchetto
+```sh
+sudo apt-get remove $PACKAGENAME
+```
 
-## Search for Available Packages
-    sudo apt-cache search word (Replace “word” with a word you want to search package names and descriptions for.)
+## Ricerca di un pacchetto
+```sh
+sudo apt-cache search $WORD
+```
 
-## Download and Install the Latest Versions of Your Installed Packages
-    sudo apt-get upgrade
+## Aggiornamento di tutti i pacchetti installati
+```sh
+sudo apt-get upgrade
+```
 
 ## dal prompt di dos
 ```sh
-    lxrun /uninstall /full
-    lxrun /install /y
+lxrun /uninstall /full
+lxrun /install /y
 ```
 
 ## dalla bash
 ```sh
-    sudo su
+sudo su
 ```
-
-## il filesystem di UbuntuOnWindows è in
-    `C:\Users\Domenico Lordi\AppData\Local\lxss\rootfs`
 
 ---
 
