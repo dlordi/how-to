@@ -1,4 +1,15 @@
 
+## Eseguire codice compresso in formato .zip (sistemi UNIX)
+
+```sh
+echo "print 1" > __main__.py # __main__.py è l'entry point
+zip app.zip __main__.py # si possono aggiungere anche directory strutturate come package di python
+echo '#!/usr/local/python2.7/bin/python -u' | cat - app.zip > app # creazione di un eseguibile con shebang
+chmod 755 app
+rm -f __main__.py app.zip
+./app
+```
+
 ## moduli utili
 
 ```py
