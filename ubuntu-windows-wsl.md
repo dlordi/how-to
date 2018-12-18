@@ -47,8 +47,3 @@ lxrun /install /y
 ```sh
 sudo su
 ```
-
----
-
-`wusa /uninstall /KB:3189866`
-

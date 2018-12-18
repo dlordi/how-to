@@ -10,12 +10,20 @@ rm -f __main__.py app.zip
 ./app
 ```
 
-## moduli utili
+## Moduli utili
 
 ```py
 import readline
 import rlcompleter
-readline.parse_and_bind("tab: complete")
+readline.parse_and_bind('tab: complete')
+```
+
+## Moduli interessanti
+
+```py
+# struct: analisi delle variabili
+import struct
+float_rep = lambda num: struct.pack('!f', num)
 ```
 
 ## Precedenza degli operatori
@@ -73,3 +81,59 @@ altro_set.pop() # pop rimuove e restituisce un elemento qualsiasi (genera un err
 altro_set.clear() # cancella tutti gli elementi presenti nel set
 ```
 
+## accesso a datasource ODBC usando pywin32 tramite oggetti COM
+```py
+import win32com.client as w32c
+
+conn = w32c.Dispatch('ADODB.Connection')
+conn.Open('nome_connessione_odbc')
+
+sql = r"""
+	select campo from tabella where
+		campo like 'a%'
+"""
+
+record_set = w32c.Dispatch('ADODB.RecordSet')
+record_set.Open(sql, conn)
+
+try:
+	record_set.MoveFirst()
+except:
+	pass
+
+while not record_set.EOF:
+	campo = record_set.Fields.Item('campo').Value
+	record_set.MoveNext()
+
+record_set.Close()
+conn.Close()
+
+#
+
+#import win32com.client as w32c
+#
+#def get_table_list(connessione):
+#	"""
+#	Restituisce la lista di tutte le tabelle accessibili
+#	sulla connessione ODBC fornita
+#	"""
+#
+#	retval = []
+#
+#	record_set = connessione.OpenSchema(20, [None, None, None, 'Table'])
+#
+#	while not record_set.EOF:
+#		retval.append(record_set('TABLE_NAME'))
+#		record_set.MoveNext()
+#
+#	record_set.Close()
+#
+#	return retval
+#
+#wshShell = w32c.Dispatch('WScript.Shell')
+#connessione = w32c.Dispatch('ADODB.Connection')
+#connessione.Open('nome_connessione_odbc')
+#wshShell.Popup("Sono state individuate %d tabelle" % (n), 1, "Refresh completato", 64)
+#connessione.Close()
+
+```
