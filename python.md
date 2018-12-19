@@ -62,7 +62,7 @@ bytes.decode() # da una sequenza di byte genera una stringa
 str.encode() # da una stringa genera una sequenza di byte
 ```
 
-## set
+## Utilizzo della struttura dati set
 
 inizializzazione
 
@@ -81,7 +81,7 @@ altro_set.pop() # pop rimuove e restituisce un elemento qualsiasi (genera un err
 altro_set.clear() # cancella tutti gli elementi presenti nel set
 ```
 
-## accesso a datasource ODBC usando pywin32 tramite oggetti COM
+## Accesso a datasource ODBC usando pywin32 tramite oggetti COM
 ```py
 import win32com.client as w32c
 
@@ -136,4 +136,13 @@ conn.Close()
 #wshShell.Popup("Sono state individuate %d tabelle" % (n), 1, "Refresh completato", 64)
 #connessione.Close()
 
+```
+
+## Configurazione di più versioni di python
+
+Si possono installare più versioni di python su Windows e tramite il file `C:\Windows\py.ini` stabilire quale sia la versione di default; ad esempio, con la seguente configurazione si usa python 2 come default (si può usare il comando `py` al posto dell'interprete specifico)
+
+```ini
+[defaults]
+python=2
 ```
