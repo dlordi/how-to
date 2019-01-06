@@ -30,3 +30,11 @@
 <tr><td style="font:menu;">WindowFrame</td><td style="width:50%;border:1px solid black;background-color:WindowFrame;">&nbsp;</td></tr>
 <tr><td style="font:menu;">WindowText</td><td style="width:50%;border:1px solid black;background-color:WindowText;">&nbsp;</td></tr>
 </table>
+
+## Varie
+
+- la dimensione di default dei font è `16px`
+
+- unità di misura:
+	- `em`: proporzione rispetto al tag padre
+	- `rem`: proporzione rispetto al tag root (html)
