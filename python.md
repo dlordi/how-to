@@ -146,3 +146,14 @@ Si possono installare più versioni di python su Windows e tramite il file `C:\W
 [defaults]
 python=2
 ```
+
+## Installazione di librerie che richiedono la compilazione di sorgenti C/C++ su Windows
+
+Per python 2.7, installare https://www.microsoft.com/en-us/download/details.aspx?id=44266 ed usare uno dei prompt di comandi messi a disposizione (ad esempio: versione a 32 bit o 64 bit; nel menu start, si trovano nella voce `Microsoft Visual C++ Compiler for Python 2.7`).
+
+Se durante la compilazione compare un messaggio relativo a `vcvarsall.bat` (ad esempio: `error: Unable to find vcvarsall.bat`), settare queste variabili:
+```bat
+SET DISTUTILS_USE_SDK=1
+SET MSSdk=1
+```
+e riprovare
