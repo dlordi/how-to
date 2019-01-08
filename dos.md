@@ -22,3 +22,8 @@ if %ERRORLEVEL% neq 0 echo %NEWLINE%^	stringa da aggiungere>>percorso_file
 ```bat
 dumpbin /dependents "file da controllare"
 ```
+
+* informazioni sulla CPU
+```bat
+WMIC CPU Get /Format:List
+```
