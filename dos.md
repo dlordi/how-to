@@ -17,3 +17,8 @@ set NEWLINE=^& echo.
 find /C /I "stringa da aggiungere" percorso_file
 if %ERRORLEVEL% neq 0 echo %NEWLINE%^	stringa da aggiungere>>percorso_file
 ```
+
+* elencare le dll richieste da un eseguibile (è necessario installare i build tools di visual studio per avere il comando!)
+```bat
+dumpbin /dependents "file da controllare"
+```
