@@ -22,3 +22,9 @@ explain plan for 'query/update/...'
 select plan_table_output from table(dbms_xplan.display('plan_table',null,'basic'));
 
 ```
+
+- hint su indici da utilizzare
+
+```sql
+select /*+ index(<nome_alias> <nome_indice>) */ * from <nome_tabella> <nome_alias>;
+```
