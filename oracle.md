@@ -2,7 +2,16 @@
 - elenco delle sessioni
 
 ```sql
-select * from v$session where osuser = 'root';
+select * from v$session where
+	osuser = 'root' -- account del sistema operativo da cui viene fatta la query
+	and status = 'ACTIVE'
+;
+```
+
+- testo delle query eseguite; questa tabella può essere messa in join con `v$session` tramite le colonne `sql_address`, `sql_hash_value`
+
+```sql
+select * from v$sqltext_with_newlines
 ```
 
 - per terminare una sessione (i numeri separati da virgola sono rispettivamente `sid` e `session#` presi dalla `v$session`)
