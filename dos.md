@@ -1,5 +1,5 @@
 
-* copia completa di un albero di directory
+- copia completa di un albero di directory
 ```bat
 robocopy /MIR /NFL /NDL /NJH "<percorso di origine>" "<percorso di destinazione>"
 ```
@@ -10,7 +10,7 @@ mkdir "<percorso di destinazione>"
 xcopy /s /e /c /h /k /y "<percorso di origine>" "<percorso di destinazione>"
 ```
 
-* aggiungere una stringa ad un file se non già presente (codice da mettere in un file bat)
+- aggiungere una stringa ad un file se non già presente (codice da mettere in un file bat)
 ```bat
 set NEWLINE=^& echo.
 
@@ -18,12 +18,17 @@ find /C /I "stringa da aggiungere" percorso_file
 if %ERRORLEVEL% neq 0 echo %NEWLINE%^	stringa da aggiungere>>percorso_file
 ```
 
-* elencare le dll richieste da un eseguibile (è necessario installare i build tools di visual studio per avere il comando!)
+- elencare le dll richieste da un eseguibile (è necessario installare i build tools di visual studio per avere il comando!)
 ```bat
 dumpbin /dependents "file da controllare"
 ```
 
-* informazioni sulla CPU
+- informazioni sulla CPU
 ```bat
 WMIC CPU Get /Format:List
+```
+
+- `echo` senza il newline finale
+```bat
+echo | set /p="avvio servizio... "
 ```
