@@ -157,3 +157,15 @@ SET DISTUTILS_USE_SDK=1
 SET MSSdk=1
 ```
 e riprovare
+
+# pip
+
+## Aggiornamento di tutti i pacchetti installati
+
+```py
+import pkg_resources
+from subprocess import call
+packages = [dist.project_name for dist in pkg_resources.working_set]
+call('py -m pip install --upgrade ' + ' '.join(packages), shell=True)
+```
+
