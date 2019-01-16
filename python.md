@@ -147,6 +147,39 @@ Si possono installare più versioni di python su Windows e tramite il file `C:\W
 python=2
 ```
 
+### Gestione delle associazioni tipi di file su Windows
+
+Gli esempi si riferiscono a python versione 2.7
+
+#### Visualizzazione
+
+```bat
+assoc | findstr -i python
+.py=Python.File
+.pyc=Python.CompiledFile
+.pyd=Python.Extension
+.pyo=Python.CompiledFile
+.pyw=Python.NoConFile
+.pyz=Python.ArchiveFile
+.pyzw=Python.NoConArchiveFile
+```
+
+```bat
+ftype | findstr -i python
+Python.ArchiveFile="C:\Python27\python.exe" "%1" %*
+Python.CompiledFile="C:\Python27\python.exe" "%1" %*
+Python.File="C:\Python27\python.exe" "%1" %*
+Python.NoConArchiveFile="C:\Python27\pythonw.exe" "%1" %*
+Python.NoConFile="C:\Python27\pythonw.exe" "%1" %*
+```
+
+#### Modifica COME AMMINISTRATORE
+```bat
+ftype Python.ArchiveFile="C:\Python27\python.exe" "%1" %*
+ftype Python.NoConArchiveFile="C:\Python27\pythonw.exe" "%1" %*
+```
+
+
 ## Installazione di librerie che richiedono la compilazione di sorgenti C/C++ su Windows
 
 Per python 2.7, installare https://www.microsoft.com/en-us/download/details.aspx?id=44266 ed usare uno dei prompt di comandi messi a disposizione (ad esempio: versione a 32 bit o 64 bit; nel menu start, si trovano nella voce `Microsoft Visual C++ Compiler for Python 2.7`).
@@ -169,3 +202,8 @@ packages = [dist.project_name for dist in pkg_resources.working_set]
 call('py -m pip install --upgrade ' + ' '.join(packages), shell=True)
 ```
 
+## Directory della cache
+
+- Linux and Unix: `~/.cache/pip` e la directory `XDG_CACHE_HOME`
+- OS X: `~/Library/Caches/pip`
+- Windows: `%LocalAppData%\pip\Cache`
