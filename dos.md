@@ -28,6 +28,11 @@ dumpbin /dependents "file da controllare"
 WMIC CPU Get /Format:List
 ```
 
+- come vedere il product key di attivazione di windows
+```bat
+wmic path softwarelicensingservice get OA3xOriginalProductKey
+```
+
 - `echo` senza il newline finale
 ```bat
 echo | set /p="avvio servizio... "
