@@ -37,3 +37,20 @@ wmic path softwarelicensingservice get OA3xOriginalProductKey
 ```bat
 echo | set /p="avvio servizio... "
 ```
+
+- modificatori di variabili
+
+| Variabile con modificatore   | Descrizione |
+|------------------------------|-------------|
+| `%~1`                        | Expands `%1` which removes any surrounding quotation marks (`""`) |
+| `%~f1`                       | Expands `%1` to a fully qualified path name |
+| `%~d1`                       | Expands `%1` to a drive letter only |
+| `%~p1`                       | Expands `%1` to a path only |
+| `%~n1`                       | Expands `%1` to a file name only |
+| `%~x1`                       | Expands `%1` to a file extension only |
+| `%~s1`                       | Expands path to contain short names only |
+| `%~a1`                       | Expands `%1` to the file attributes of file |
+| `%~t1`                       | Expands `%1` to the date and time of file |
+| `%~z1`                       | Expands `%1` to the size of file |
+| `%~$PATH:I`                  | Searches the directories listed in the `PATH` environment variable and expands `%I` to the fully qualified name of the first one found. If the environment variable name is not defined or the file is not found by the search, this modifier expands to the empty string |
+
