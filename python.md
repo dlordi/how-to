@@ -18,6 +18,16 @@ import rlcompleter
 readline.parse_and_bind('tab: complete')
 ```
 
+### shutil: copia di file
+
+| Funzione           | Metadati | Permission | Buffer | dest può essere una directory |
+|--------------------|----------|------------|--------|-------------------------------|
+| shutil.copy        | No       | Si         | No     | Si                            |
+| shutil.copyfile    | No       | No         | No     | No                            |
+| shutil.copy2       | Si       | Si         | No     | Si                            |
+| shutil.copyfileobj | No       | No         | Si     | No                            |
+
+
 ## Moduli interessanti
 
 ```py
