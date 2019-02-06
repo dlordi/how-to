@@ -18,14 +18,14 @@ import rlcompleter
 readline.parse_and_bind('tab: complete')
 ```
 
-### shutil: copia di file
+### `shutil`: copia di file
 
-| Funzione           | Metadati | Permission | Buffer | dest può essere una directory |
-|--------------------|----------|------------|--------|-------------------------------|
-| shutil.copy        | No       | Si         | No     | Si                            |
-| shutil.copyfile    | No       | No         | No     | No                            |
-| shutil.copy2       | Si       | Si         | No     | Si                            |
-| shutil.copyfileobj | No       | No         | Si     | No                            |
+| Funzione             | Metadati | Permission | Buffer | dest può essere una directory |
+|----------------------|----------|------------|--------|-------------------------------|
+| `shutil.copy`        | No       | Si         | No     | Si                            |
+| `shutil.copyfile`    | No       | No         | No     | No                            |
+| `shutil.copy2`       | Si       | Si         | No     | Si                            |
+| `shutil.copyfileobj` | No       | No         | Si     | No                            |
 
 
 ## Moduli interessanti
@@ -42,19 +42,20 @@ Precedenza degli operatori elencata nella tabella in ordine decrescente
 
 | Operatore                                    | Significato                                          |
 |----------------------------------------------|------------------------------------------------------|
-| ()                                           | Parentesi                                            |
-| **                                           | Esponente                                            |
-| +x, -x, ~x                                   | Unary plus, Unary minus, Bitwise NOT                 |
-| *, /, //, %                                  | Moltiplicazione, divisione, divisione intera, modulo |
-| +, -                                         | Somma, sottrazione                                   |
-| <<, >>                                       | Operatori shift bitwise                              |
-| &                                            | AND bitwise                                          |
-| ^                                            | XOR bitwise                                          |
-| \|                                            | OR bitwise                                           |
-| ==, !=, >, >=, <, <=, is, is not, in, not in | Confronto, identità, Membership operators            |
-| not                                          | Logical NOT                                          |
-| and                                          | Logical AND                                          |
-| or                                           | Logical OR                                           |
+| `()`                                         | Parentesi                                            |
+| `**`                                         | Esponente                                            |
+| `+x`, `-x`, `~x`                             | Più unario, meno unario, NOT bitwise                 |
+| `*`, `/`, `//`, `%`                          | Moltiplicazione, divisione, divisione intera, modulo |
+| `+`, `-`                                     | Somma, sottrazione                                   |
+| `<<`, `>>`                                   | Operatori shift bitwise                              |
+| `&`                                          | AND bitwise                                          |
+| `^`                                          | XOR bitwise                                          |
+| `|`                                          | OR bitwise                                           |
+| `==`, `!=`, `>`, `>=`, `<`, `<=`, `is`,      | Confronto                                            |
+| `is not`, `in`, `not in`                     | Identità, operatori di appartenenza                  |
+| `not`                                        | NOT logico                                           |
+| `and`                                        | AND logico                                           |
+| `or`                                         | OR logico                                            |
 
 ## Encode/decode delle stringhe
 
