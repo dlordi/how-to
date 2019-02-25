@@ -42,3 +42,15 @@ yum provides "*/<nome file>"
 ```sh
 yum --showduplicates list openssl
 ```
+
+* elenco delle operazioni fatte
+```sh
+yum history
+```
+
+la colonna ID rappresenta un identificativo dell'operazione e può essere usata nei subcomandi di `history` per annullare una o più operazioni
+
+* tornare ad un precedente stato
+```sh
+yum history rollback <ID>
+```
