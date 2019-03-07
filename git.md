@@ -58,3 +58,8 @@ Ogni commit visualizzata con il comando precedente in `vi` è preceduta da un co
 
 Eseguendo le istruzioni dello step precedente a questo punto sarà visualizzato in `vi` il messaggio originale della commit; modificarlo, salvare e uscire da `vi`
 
+
+## Visualizzare la storia di un file
+```sh
+git log --follow -p -- $NOME_FILE
+```
