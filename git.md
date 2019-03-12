@@ -58,6 +58,19 @@ Ogni commit visualizzata con il comando precedente in `vi` è preceduta da un co
 
 Eseguendo le istruzioni dello step precedente a questo punto sarà visualizzato in `vi` il messaggio originale della commit; modificarlo, salvare e uscire da `vi`
 
+## Unione (squash) di più commit in una sola
+
+1. ### occorre sapere il numero delle ultime commit fatte che si vogliono unire; eseguire quindi il comando
+```sh
+git rebase --interactive HEAD~$NUMERO_ULTIME_COMMIT_DA_UNIRE
+```
+
+2. ### a questo punto si apre l'editor di testo con elencate le commit individuate dal comando precedente
+Le commit sono elencate dalla più vecchia alla più recente ed ognuna è preceduta dal comando `pick`; la prima commit (quindi la più vecchia) deve restare con il comando `pick` mentre per le altre occorre sostituire il comando in `s`; salvare il testo così modificato ed uscire dall'editor
+
+3. ### a questo punto git proporrà i messaggi delle singole commit da unire
+I messaggi sono visualizzati nell'editor di testo, in cui è quindi possibile scegliere il comando da assegnare alla commit risultate dall'unione (le righe che iniziano con hash non saranno incluse nel messaggio finale); salvando e uscendo le commit
+saranno unite
 
 ## Visualizzare la storia di un file
 ```sh
