@@ -78,7 +78,13 @@ saranno unite
 git log --follow -p -- $NOME_FILE
 ```
 
-## Elenco di file compresi fra due commit
+## Elenco di file
+- di una sola commit
+```sh
+git diff-tree --no-commit-id --name-only -r $ID1
+```
+
+- compresi fra due commit
 ```sh
 git diff-tree --no-commit-id --name-only -r $ID1^ $ID2
 ```
