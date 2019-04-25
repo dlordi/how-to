@@ -59,6 +59,11 @@ Ogni commit visualizzata con il comando precedente in `vi` è preceduta da un co
 
 Eseguendo le istruzioni dello step precedente a questo punto sarà visualizzato in `vi` il messaggio originale della commit; modificarlo, salvare e uscire da `vi`
 
+In alternativa, usare
+```sh
+git commit --amend -m $NUOVO_MESSAGGIO
+```
+
 ## Unione (squash) di più commit in una sola
 
 1. ### occorre sapere il numero delle ultime commit fatte che si vogliono unire; eseguire quindi il comando
@@ -82,6 +87,10 @@ git log --follow -p -- $NOME_FILE
 - di una sola commit
 ```sh
 git diff-tree --no-commit-id --name-only -r $ID1
+```
+oppure
+```sh
+git log --stat $HASH
 ```
 
 - compresi fra due commit
