@@ -218,3 +218,27 @@ call('py -m pip install --upgrade ' + ' '.join(packages), shell=True)
 - Linux and Unix: `~/.cache/pip` e la directory `XDG_CACHE_HOME`
 - OS X: `~/Library/Caches/pip`
 - Windows: `%LocalAppData%\pip\Cache`
+
+# Virtual Environment
+
+## crezione ed attivazione di un nuovo Virtual Environment
+```sh
+py -3 -m venv $NOME_ENV
+cd $NOME_ENV
+scripts/activate
+```
+
+## uso del Virtual Environment
+```sh
+pip install $PACCHETTO
+```
+oppure
+```sh
+pip install -r requirements.txt
+```
+
+## preparazione delle dipendenze e disattivazione
+```sh
+pip freeze >requirements.txt
+deactivate
+```
