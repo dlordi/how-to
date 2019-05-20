@@ -37,3 +37,13 @@ select plan_table_output from table(dbms_xplan.display('plan_table',null,'basic'
 ```sql
 select /*+ index(<nome_alias> <nome_indice>) */ * from <nome_tabella> <nome_alias>;
 ```
+
+- aggiugnere un commento ad una colonna
+
+```sql
+COMMENT ON COLUMN "SCHEMA"."TABLE_NAME"."COLUMN_NAME" IS 'commento';
+```
+
+- posizione del file tnsnames.ora: `$ORACLE_HOME/network/admin/tnsnames.ora`
+
+
