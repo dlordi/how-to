@@ -44,6 +44,15 @@ select /*+ index(<nome_alias> <nome_indice>) */ * from <nome_tabella> <nome_alia
 COMMENT ON COLUMN "SCHEMA"."TABLE_NAME"."COLUMN_NAME" IS 'commento';
 ```
 
-- posizione del file tnsnames.ora: `$ORACLE_HOME/network/admin/tnsnames.ora`
+- posizione del file `tnsnames.ora`
 
+  - `$ORACLE_HOME/network/admin/tnsnames.ora`
 
+- elenco delle tabelle di uno schema
+
+```sql
+SELECT DISTINCT OWNER, OBJECT_NAME
+  FROM DBA_OBJECTS
+ WHERE OBJECT_TYPE = 'TABLE'
+   AND OWNER = '&OWNER'
+```
