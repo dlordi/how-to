@@ -1,4 +1,7 @@
 
+## GIL (Global Interpreter Lock)
+- evita che il codice sia eseguito su più di un core del processore alla volta
+
 ## Eseguire codice compresso in formato .zip (sistemi UNIX)
 
 ```sh
