@@ -56,3 +56,14 @@ SELECT DISTINCT OWNER, OBJECT_NAME
  WHERE OBJECT_TYPE = 'TABLE'
    AND OWNER = '&OWNER'
 ```
+
+- lock
+
+la `select ... for update` non può essere usata quando ci sono funzioni di raggruppamento fra le clausole; in questi casi si deve fare una lock sull'intera tabella con l'istruzione:
+```sql
+lock table NOME_TABELLA in exclusive mode
+```
+alla prima `commit`/`rollback`, il lock viene tolto; nel frattempo, se altre connessioni provano a fare la lock, restano in attesa; il tempo di attesa può essere modificato con
+```sql
+alter session set ddl_lock_timeout = 10;
+```
