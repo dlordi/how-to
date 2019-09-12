@@ -245,3 +245,24 @@ pip install -r requirements.txt
 pip freeze >requirements.txt
 deactivate
 ```
+
+# pipenv
+
+- tutti i virtual environment sono tenuti in `~/.virtualenvs`
+  - se si vuole creare il virtual environment nella directory del progetto impostare la variabile d'ambiente `PIPENV_VENV_IN_PROJECT=1`
+- il file `Pipfile` (si trova nella root del progetto) tiene traccia delle dipendenze
+- `Pipfile` sostituisce `requirements.txt`
+- il file `Pipfile.lock` tiene traccia di cosa è stato installato
+- nel file `Pipfile` si può anche mettere il riferimento alla versione di python da usare per creare il virtual environment
+- la creazione del virtual environment e l'installazione delle dipendenze avviene con il comando
+```sh
+pipenv install
+```
+- per attivare il virtual environment usare il comando
+```sh
+pipenv shell
+```
+- per installare una nuova dipendenza (che verrà aggiunta automaticamente al `Pipfile`) usare il comando
+```sh
+pipenv install $NOME_PACKAGE
+```
