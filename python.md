@@ -254,9 +254,13 @@ deactivate
 - `Pipfile` sostituisce `requirements.txt`
 - il file `Pipfile.lock` tiene traccia di cosa è stato installato
 - nel file `Pipfile` si può anche mettere il riferimento alla versione di python da usare per creare il virtual environment
-- la creazione del virtual environment e l'installazione delle dipendenze avviene con il comando
+- se si ha già un `Pipfile`, la creazione del virtual environment e l'installazione delle dipendenze avviene con il comando
 ```sh
 pipenv install
+```
+- per creare un nuovo virtual environment partendo da zero si può usare il comando
+```sh
+pipenv --python $PYTHON_VERSION_FOR_VENV
 ```
 - per attivare il virtual environment usare il comando
 ```sh
