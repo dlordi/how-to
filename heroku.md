@@ -45,7 +45,7 @@ si può indicare il comando di partenza sia nel `Procfile` che in `package.json`
 vedi anche https://becominghuman.ai/steps-to-create-and-deploy-python-web-app-on-heroku-95b6c4f570b0
 
 ```sh
-heroku login # This will ask you to enter email id and password
+heroku login -i # This will ask you to enter email id and password
 
 heroku create # This will create an application in Heroku which you can see on Heroku Dashboard
 git remote -v # to be sure remote heroku repository has been added
