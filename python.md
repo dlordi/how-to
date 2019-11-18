@@ -298,3 +298,65 @@ pipenv --rm
 my_list = [...]
 copy_of_my_list = list(my_list)
 ```
+- tramite il modulo `abc` (Abstract Base Class) e le metaclassi è possibile controllare l'istanziazione delle classi
+  - esempio con python 2
+```py
+from abc import ABCMeta, abstractmethod
+
+class Base(object):
+	__metaclass__ = ABCMeta
+
+	@abstractmethod
+	def foo(self):
+		pass
+
+
+class Concrete(Base):
+	pass
+
+
+# questa istruzione genera un errore perché la classe Concrete non implementa il metodo foo
+c = Concrete()
+```
+  - esempio con python 3
+```py
+from abc import ABCMeta, abstractmethod
+
+class Base(metaclass=ABCMeta):
+	@abstractmethod
+	def foo(self):
+		pass
+
+
+class Concrete(Base):
+	pass
+
+
+# questa istruzione genera un errore perché la classe Concrete non implementa il metodo foo
+c = Concrete()
+```
+- le tuple sono sempre strutture ad-hoc (non esiste un modo per garantire che due tuple abbiano lo stesso numero/tipo di campi); questo "difetto" porta a preferire le `collections.namedtuple`
+- le `collections.namedtuple` sono implementate internamente come classi
+- i metodi statici sono principalmente un metodo per inserire delle funzioni in un namespace
+- dato che è consentito un solo metodo `__init__` per ogni classe, i metodi di classe (`classmethod`) sono un modo per fornire dei costruttori alternativi
+- le tuple possono essere usate come key di un dizionario solo se tutti gli elementi della tupla sono hashable
+- i moduli standard di python offrono varianti specializzate dei dizionari standard, che sono tutte basate sul tipo `dict` standard
+- `types.MappingProxyType` è una vista readonly su un dizionario; questa classe è presente da python 3.3 per avere proxy immutabili di un dizionario
+- gli `array.array` sono ottimizzati in termini di occupazione di memoria rispetto a tuple e liste
+- python 3: il tipo `bytes` è immutabile, ma a differenza del tipo `str`, è disponibile un tipo `bytearray` che è invece una sequenza modificabile di interi nel range 0-255
+- da python 3.6 è disponibile `typing.NamedTuple`, classe simile a `collections.namedtuple`, ma che permette di usare una nuova sintassi e di specificare i type hint
+```py
+from typing import NamedTuple
+
+class Car(NamedTuple):
+	color: str
+	mileage: float
+	automatic: bool
+```
+- da python 3.3 è disponibile `typing.SimpleNamespace`: una sorta di dizionario che permette di accedere alle key con la sintassi dot (.) invece delle parentesi quadre
+- implementazioni corrette del tipo di dato set permettono di testare l'appartenenza di un elemento in tempo costante, mentre unione, intersezione e differenza sono in media O(n)
+- implementazioni corrette di uno stack permettodo di avere inserimento e cancellazione in tempo costante
+- il tipo `list` usato per emulare uno stack
+  - supporta le operazioni di push e pop in tempo costante in amortized analysis
+    - le performance sono però meno "stabili" di quelle di `collections.deque` (linked list) che invece sono sempre O(1)
+  - l'accesso ad un elemento qualsiasi è sempre O(1)
