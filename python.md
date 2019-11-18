@@ -287,3 +287,14 @@ pipenv --venv
 ```sh
 pipenv --rm
 ```
+
+# appunti da Python Tricks: the book
+- se un dizionario viene passato ad una funzione con l'operatore di unpack `*`, alla funzione verranno passate le keys del dizionario, in un ordine arbitrario
+- i contenitori come dizionari e liste utilizzano sempre il risultato di `__repr__` sugli elementi contenuti, anche quando si prova ad avere una rappresentazione `str`
+- nella scrittura di un modulo, è una buona pratica definire una classe di eccezioni base da cui far derivare tutte quelle che verranno lanciate dal modulo stesso
+- gli assegnamenti in python non copiano gli oggetti, creano solo un legame fra il nome e l'oggetto stesso
+- i contenitori modificabili nativi di python (dizionari, liste, set, ecc...) possono essere copiati (shallow mode) passandoli come argomento alla rispettiva funzione di factory
+```py
+my_list = [...]
+copy_of_my_list = list(my_list)
+```
