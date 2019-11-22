@@ -67,3 +67,9 @@ alla prima `commit`/`rollback`, il lock viene tolto; nel frattempo, se altre con
 ```sql
 alter session set ddl_lock_timeout = 10;
 ```
+
+- descrizione di un constraint
+  - utile per fare debug di errori `ORA-00001: unique constraint ... violated`
+```sql
+Select DBMS_METADATA.GET_DDL('CONSTRAINT', NOME_CONSTRAINT) from dual
+```
