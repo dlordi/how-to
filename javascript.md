@@ -176,3 +176,16 @@ function test() { a = 5; var a = 10; }
 ```
 
 2. The above discussion is when "strict mode" is not enabled. Lookup rules are a bit different when using "strict mode" and lexical references that would have resolved to window properties without "strict mode" will raise "undeclared variable" errors under "strict mode". I didn't really understand where this is specified, but its how browsers behave.
+
+# `Number` e `parseInt`
+
+```js
+Number('2a') === NaN
++'2a' === NaN
+parseInt('2a') === 2
+```
+
+in pratica,
+  - `parseInt` si ferma al primo carattere che non può essere trattato come numero intero, restituendo quello di cui ha fatto il parsing fino a quel momento.
+  - `Number` invece tenta di convertire l'intera stringa: se in qualsias punto non ci riesce produce `NaN`
+    - l'operatore unario `+` si comporta come `Number`
