@@ -54,6 +54,8 @@ equivale a questo codice python
 d = dict()
 ```
 
+- lo `switch` confronta tipo e valore con i `case`
+
 ## Regole per la conversione dei tipi: esempi
 ```js
 5 - '4' === 1 // l'operatore - si applica solo fra numeri, quindi prova a convertire entrambi gli operandi in numeri ed esegue l'operazione
