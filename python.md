@@ -222,6 +222,28 @@ call('py -m pip install --upgrade ' + ' '.join(packages), shell=True)
 - OS X: `~/Library/Caches/pip`
 - Windows: `%LocalAppData%\pip\Cache`
 
+## Installazioni / disinstallazioni massive da file di requirements
+
+```sh
+pip install -r $REQUIREMENT_FILE
+```
+
+```sh
+pip uninstall -r $REQUIREMENT_FILE -y
+```
+
+## Elenco dei pacchetti obsoleti
+
+```sh
+pip list --outdated
+```
+
+## Dettagli di un pacchetto
+
+```sh
+pip show $NOME_PACCHETTO --verbose
+```
+
 # Virtual Environment
 
 ## crezione ed attivazione di un nuovo Virtual Environment
