@@ -382,3 +382,7 @@ class Car(NamedTuple):
   - supporta le operazioni di push e pop in tempo costante in amortized analysis
     - le performance sono però meno "stabili" di quelle di `collections.deque` (linked list) che invece sono sempre O(1)
   - l'accesso ad un elemento qualsiasi è sempre O(1)
+
+# Object oriented programming
+
+- le sottoclassi che chiamano `super()` devono passare due parametri: il primo è la sottoclasse stessa, il secondo è `self`
