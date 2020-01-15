@@ -205,6 +205,11 @@ SET MSSdk=1
 ```
 e riprovare
 
+## Opzioni utili riga di comando
+
+- `-O`: toglie le assert statements dal codice compilato
+- `-OO`: toglie sia le assert che le doc string per ridurre la dimensione del compilato
+
 # pip
 
 ## Aggiornamento di tutti i pacchetti installati
