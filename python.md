@@ -210,6 +210,11 @@ e riprovare
 - `-O`: toglie le assert statements dal codice compilato
 - `-OO`: toglie sia le assert che le doc string per ridurre la dimensione del compilato
 
+## Variabili d'ambiente utili
+
+- `PYTHONDONTWRITEBYTECODE`: equivale a `python -B` (non genera i file `.pyc`)
+- `PYTHONUNBUFFERED`: equivale a `python -u` (non bufferizza stdout e stderr)
+
 # pip
 
 ## Aggiornamento di tutti i pacchetti installati
