@@ -1,4 +1,11 @@
 
+## installazione di pywin32
+- se dopo aver installato pywin32 non si riescono ad importare alcuni moduli (ad es, la `import win32api` genera un errore su una DLL), eseguire in un prompt di DOS come amministratore
+```sh
+cd \Python27
+python scripts\pywin32_postinstall.py -install
+```
+
 ## GIL (Global Interpreter Lock)
 - evita che il codice sia eseguito su più di un core del processore alla volta
 
@@ -396,3 +403,11 @@ class Car(NamedTuple):
 # Object oriented programming
 
 - le sottoclassi che chiamano `super()` devono passare due parametri: il primo è la sottoclasse stessa, il secondo è `self`
+
+# f-strings
+
+formatta in esadecimale un numero intero con zero padding a due cifre
+```py
+r=1
+print(f'{r:02X}')
+```
