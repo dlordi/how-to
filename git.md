@@ -97,3 +97,8 @@ git log --stat $HASH
 ```sh
 git diff-tree --no-commit-id --name-only -r $ID1^ $ID2
 ```
+
+- delle ultime `NUM` commit
+```sh
+git diff --name-only HEAD~$NUM
+```
