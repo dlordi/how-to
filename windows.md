@@ -8,6 +8,11 @@ rd /s /q %windir%\softwaredistribution
 net start bits
 net start wuauserv
 ```
+  - può essere utile riavviare anche questi servizi
+```bat
+net stop appidsvc
+net stop cryptsvc
+```
 - riavviare il PC
 - provare di nuovo ad installare gli aggiornamenti di Windows
 
