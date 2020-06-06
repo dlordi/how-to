@@ -15,7 +15,9 @@ net stop cryptsvc
 ```
 - riavviare il PC
 - provare di nuovo ad installare gli aggiornamenti di Windows
-- vedi anche https://docs.microsoft.com/it-it/windows/deployment/update/windows-update-resources
+- vedi anche
+  - https://docs.microsoft.com/it-it/windows/deployment/update/windows-update-resources
+  - https://www.howtogeek.com/247380/how-to-fix-windows-update-when-it-gets-stuck/
 
 ## mount di una condivisione di rete come unità disco
 ```bat
