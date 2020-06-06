@@ -27,3 +27,12 @@ net use Z: \\percorso\share\
 ```bat
 net use Z: /delete
 ```
+
+## Modificare nome e azienda di installazione
+```reg
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion]
+"RegisteredOwner"="NOME"
+"RegisteredOrganization"="AZIENDA"
+```
