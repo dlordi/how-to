@@ -5,6 +5,7 @@ Per attivarlo, cercare nel menu start la voce `funzionalità`; nella finestra ch
 ### Comandi utili da Windows
 - `wsl` fa partire il sottosistema linux in una shell
 - `wslconfig` dato che è possibile installare più sottosistemi, con questo comando si possono gestire quelli installati (ad esempio, si può specificare il sottosistema di default con il comando `wslconfig /setdefault <sottosistema>`)
+- `wsl --list` per elencare tutti i sistemi installati
 
 ## Il filesystem di UbuntuOnWindows è in
 `C:\Users\<utente>\AppData\Local\lxss\rootfs`
