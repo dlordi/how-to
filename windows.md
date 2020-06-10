@@ -38,3 +38,9 @@ Windows Registry Editor Version 5.00
 "RegisteredOwner"="NOME"
 "RegisteredOrganization"="AZIENDA"
 ```
+
+---
+
+## Misc
+
+* [Driver Sony Vaio](http://sonyvaiodriver.com/sony-vaio-vpceb2e9ebq-windows-7-64-bits-drivers/)
