@@ -18,8 +18,6 @@
 
 - bool `CloseClickHeader` [`0`]: If it is automatically closed after click to Header. For predefined header in TreeGrid menu like for Enum type is already set.
 
-- bool `HeadDrag` [`1`]: If the dialog can be moved by mouse dragging the Head.
-
 - int `Shift` [`-1`]: How much (in pixels) will be the dialog moved in align direction from the header (to overlay header and dialog).
 
 - bool `Wrap`: If the dialog lets wrapping of texts,
@@ -31,10 +29,16 @@
 
 - object `FocusTag`: Tag that is focused after click to scroll, for null it is the main dialog tag.
 
+- string `Header`
+  - For TreeGrid menu it is HTML displayed in on the cell, when the menu is shown.
+  - For custom menu it is HTML displayed inside place set by `TPosition` object.
+
 - string `Head`: Top HTML / menu caption, will not be scrolled.  
   _Since 14.0_ if set to "#" it is not displayed. Setting to "" displays it as empty.
 
-- string `Foot`: Bottom HTML / menu footer, will not be scrolled. It is ignored when shown Buttons.
+- bool `HeadDrag` [`1`]: If the dialog can be moved by mouse dragging the `Head`.
+
+- string `Foot`: Bottom HTML / menu footer, will not be scrolled. It is ignored when shown `Buttons`.
 
 - bool `Shadow` [`1`]: If it shows shadow under the dialog
 
@@ -42,13 +46,15 @@
 
 - int `ShadowWidth` [`7`]: The width of shadow in pixels, it will be reserved to the edge right and bottom edge.
 
-- bool `HeadClose`: Displays close button on the right in the Head. Only if some Head is set.
+- bool `HeadClose`: Displays close button on the right in the Head. Only if some `Head` is set.
 
-- bool `AppendHeader` [`1`]: Append dialog next to Header (if any) rather than to the place or to the TreeGrid cell.
+- bool `AppendHeader` [`1`]: Append dialog next to `Header` (if any) rather than to the place or to the TreeGrid cell.
 
-- bool `CanFocus` [`1` / `0`]: If the dialog gets key focus, 1 is default for menu, 0 for dialog.
+- bool `CanFocus` [`1` / `0`]: If the dialog gets key focus
+  - `1` is default for menu
+  - `0` for dialog.
 
-- bool `Modal` [`0`]: If set to 1, disables all other controls at page when the dialog is shown.
+- bool `Modal` [`0`]: If set to `1`, disables all other controls at page when the dialog is shown.
 
 - bool `NoScroll` [`0`]: If set to 1, never shows vertical scrollbar
 
@@ -78,4 +84,4 @@ By default it is the whole browser window (not page body!)
 It can be set as `{X:0,Y:0,Width:0,Height:0}` or `[X,Y,Width,Height]` or HTML tag id or the HTML tag itself.
 
 - TPosition `Position`: Position and align of the menu. The position object has preset its place to the cell the menu is shown for.
-You can set especially Position.Align attribute to align the dialog to the cell differently.
+You can set especially `Position.Align` attribute to align the dialog to the cell differently.
