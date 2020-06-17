@@ -12,3 +12,4 @@
 ---
 
 * [Cascadia Code](https://github.com/microsoft/cascadia-code)
+* [TL;DR](https://tldr.sh/)
