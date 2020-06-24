@@ -1,3 +1,14 @@
+## Hyper-V
+- per abilitarlo da prompt con permessi di amministratore
+```bat
+dism.exe /Online /Enable-Feature:Microsoft-Hyper-V /All
+```
+- per disabilitarlo da prompt con permessi di amministratore
+```bat
+dism.exe /Online /Disable-Feature:Microsoft-Hyper-V-All
+```
+- vedi anche https://www.poweronplatforms.com/enable-disable-hyper-v-windows-10-8/
+
 ## Sbloccare gli aggiornamenti di Windows
 - chiudere la finestra degli aggiornamenti di Windows
 - avviare come amministratore un Prompt dei comandi ed eseguire i seguenti comandi
