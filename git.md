@@ -68,7 +68,7 @@ git commit --amend -m $NUOVO_MESSAGGIO
 
 1. ### occorre sapere il numero delle ultime commit fatte che si vogliono unire; eseguire quindi il comando
 ```sh
-git rebase --interactive HEAD~$NUMERO_ULTIME_COMMIT_DA_UNIRE
+git rebase -i HEAD~$NUMERO_ULTIME_COMMIT_DA_UNIRE
 ```
 
 2. ### a questo punto si apre l'editor di testo con elencate le commit individuate dal comando precedente
