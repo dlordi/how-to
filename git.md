@@ -26,7 +26,7 @@ git log # visualizzare l'elenco dei commit; se si aggiunge -p visualizza anche l
 git push -u origin master # richiede la password di github; i push successivi possono essere fatti anche solo con "git push"
 ```
 
-## Clonare un repo da GitHub
+## Clonare un repo remoto
 
 ```sh
 git clone $URL_DEL_REPO # crea la directory in cui clona il repo
@@ -101,4 +101,9 @@ git diff-tree --no-commit-id --name-only -r $ID1^ $ID2
 - delle ultime `NUM` commit
 ```sh
 git diff --name-only HEAD~$NUM
+```
+
+## Undo dell'ultimo commit senza perdere le modifiche
+```sh
+git reset --soft HEAD^
 ```
