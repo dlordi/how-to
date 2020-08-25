@@ -103,7 +103,7 @@ git diff-tree --no-commit-id --name-only -r $ID1^ $ID2
 git diff --name-only HEAD~$NUM
 ```
 
-## Undo dell'ultimo commit senza perdere le modifiche
+## Undo dell'ultimo commit senza perdere le modifiche (tipicamente si usa quando ci si è accorti di aver fatto una commit incompleta)
 ```sh
 git reset --soft HEAD^
 ```
