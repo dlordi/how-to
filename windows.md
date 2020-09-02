@@ -9,6 +9,11 @@ dism.exe /Online /Disable-Feature:Microsoft-Hyper-V-All
 ```
 - vedi anche https://www.poweronplatforms.com/enable-disable-hyper-v-windows-10-8/
 
+## Directory speciali
+- esecuzione automatica
+  - specifica dell'utente: `%APPDATA%\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
+  - di tuti gli utenti: `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp`
+
 ## Sbloccare gli aggiornamenti di Windows
 - chiudere la finestra degli aggiornamenti di Windows
 - avviare come amministratore un Prompt dei comandi ed eseguire i seguenti comandi
