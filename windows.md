@@ -11,7 +11,7 @@ dism.exe /Online /Disable-Feature:Microsoft-Hyper-V-All
 
 ## Directory speciali
 - esecuzione automatica
-  - specifica dell'utente: `%APPDATA%\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
+  - specifica dell'utente: `%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup`
   - di tuti gli utenti: `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp`
 
 ## Sbloccare gli aggiornamenti di Windows
