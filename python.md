@@ -201,6 +201,18 @@ ftype Python.NoConArchiveFile="C:\Python27\pythonw.exe" "%1" %*
 ```
 
 
+### Configurazione su vim
+- opzioni da aggiungere nel file `.vimrc`
+```txt
+set textwidth=79 " lines longer than 79 columns will be broken
+set shiftwidth=4 " operation >> indents 4 columns; << unindents 4 columns
+set tabstop=4 " a hard TAB displays as 4 columns
+set expandtab " insert spaces when hitting TABs
+set softtabstop=4 " insert/delete 4 spaces when hitting a TAB/BACKSPACE
+set shiftround " round indent to multiple of 'shiftwidth'
+set autoindent " align the new line indent with the previous line
+```
+
 ## Installazione di librerie che richiedono la compilazione di sorgenti C/C++ su Windows
 
 Per python 2.7, installare https://www.microsoft.com/en-us/download/details.aspx?id=44266 ed usare uno dei prompt di comandi messi a disposizione (ad esempio: versione a 32 bit o 64 bit; nel menu start, si trovano nella voce `Microsoft Visual C++ Compiler for Python 2.7`).
