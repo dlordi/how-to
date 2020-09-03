@@ -17,3 +17,6 @@ Per attivarlo
 lxrun /uninstall /full
 lxrun /install /y
 ```
+
+# CentWSL
+- [riferimento principale](https://github.com/yuk7/CentWSL)
