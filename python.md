@@ -423,3 +423,47 @@ formatta in esadecimale un numero intero con zero padding a due cifre
 r=1
 print(f'{r:02X}')
 ```
+
+# pytz
+
+Gli oggetti creati con `datetime` sono "naive", non contengono MAI informazioni sul timezone a cui si riferiscono, anche quando vengono usati metodi che fanno riferimento a UTC
+
+```py
+import datetime
+import pytz
+
+dt_now = datetime.datetime.now()
+dt_utcnow = datetime.datetime.utcnow()
+```
+
+se si prova a stampare `dt_now` e/o `dt_utcnow`, non viene data nessuna indicazione del timezone
+
+`pytz` è un database dei vari timezone esistenti ed una serie di metodi che consentono di applicare i timezone agli oggetti datetime
+
+per aggiungere informazioni sul timezone ad un oggetto naive occorre prima stabilire quale timezone...
+
+```py
+my_tz = pytz.timezone('Europe/Rome')
+utc_tz = pytz.timezone('UTC')
+```
+
+... e poi usare questo oggetto per localizzare gli oggetti naive
+
+```py
+dt_now = my_tz.localize(dt_now)
+dt_utcnow = utc_tz.localize(dt_utcnow)
+```
+
+ora gli oggetti datetime contengono informazioni sul timezone e possono essere convertiti da un timezone all'altro correttamente
+
+```py
+us_east_tz = pytz.timezone('US/Eastern')
+dt_us_east = dt_now.astimezone(us_east_tz)
+```
+
+si possono anche creare direttamente oggetti datetime che siano timezone aware
+
+```py
+dt_us_east = datetime.datetime.now(tz=us_east_tz)
+dt_us_east = datetime.datetime(2019, 5, 12, 21, 03, 23, tzinfo=us_east_tz)
+```
