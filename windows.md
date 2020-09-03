@@ -79,6 +79,52 @@ Windows Registry Editor Version 5.00
 "RegisteredOrganization"="AZIENDA"
 ```
 
+## Utility varie da riga di comando
+
+- controllo del disco
+```bat
+chkdsk F: /f /r /x
+```
+
+- disinstallazione di uno specifico aggiornamento di Windows (bisogna conoscere il Knowledge Base number)
+```bat
+wusa.exe /uninstall /kb:2846071 /quiet /norestart
+```
+
+- reset winsock e stack TCP/IP
+```bat
+netsh winsock reset
+netsh int ip reset resettcpip.txt
+```
+
+- programmi installati
+  - elenco dei nomi
+```bat
+reg query "HKLM\Software\Microsoft\Windows\Currentversion\Uninstall" /s /v DisplayName
+```
+
+  - elenco dei comandi usati per disinstallare
+```bat
+reg query "HKLM\Software\Microsoft\Windows\Currentversion\Uninstall" /s /v UninstallString
+```
+
+- cancellare servizi
+```bat
+sc GetKeyName "nome che compare nella prima colonna della finestra servizi"
+sc delete "nome visualizzato dal comando precedente"
+```
+
+- password delle reti wifi
+```bat
+netsh wlan show profiles
+netsh wlan show profile name="ProfileName" key=clear
+```
+
+- comando per generare un file di report in `\windows\system32\energy-report.html` sull'utilizzo della batteria
+```bat
+powercfg -energy
+```
+
 ---
 
 ## Misc
