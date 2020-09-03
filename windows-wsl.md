@@ -1,6 +1,8 @@
 # WSL:
 
-Per attivarlo, cercare nel menu start la voce `funzionalità`; nella finestra che si apre cercare `Sottosistema linux`
+Per attivarlo
+- cercare nel menu start la voce `funzionalità`; nella finestra che si apre cercare `Sottosistema linux`
+- vedi anche https://docs.microsoft.com/it-it/windows/wsl/install-win10
 
 ### Comandi utili da Windows
 - `wsl` fa partire il sottosistema linux in una shell

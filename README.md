@@ -7,8 +7,9 @@
 * [firebase](firebase.md)
 * [oracle](oracle.md)
 * [python](python.md)
-* [ubuntu-windows-wsl](ubuntu-windows-wsl.md)
+* [windows-wsl](windows-wsl.md)
 
 ---
 
 * [Cascadia Code](https://github.com/microsoft/cascadia-code)
+* [TL;DR](https://tldr.sh/)

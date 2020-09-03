@@ -26,7 +26,7 @@ git log # visualizzare l'elenco dei commit; se si aggiunge -p visualizza anche l
 git push -u origin master # richiede la password di github; i push successivi possono essere fatti anche solo con "git push"
 ```
 
-## Clonare un repo da GitHub
+## Clonare un repo remoto
 
 ```sh
 git clone $URL_DEL_REPO # crea la directory in cui clona il repo
@@ -68,7 +68,7 @@ git commit --amend -m $NUOVO_MESSAGGIO
 
 1. ### occorre sapere il numero delle ultime commit fatte che si vogliono unire; eseguire quindi il comando
 ```sh
-git rebase --interactive HEAD~$NUMERO_ULTIME_COMMIT_DA_UNIRE
+git rebase -i HEAD~$NUMERO_ULTIME_COMMIT_DA_UNIRE
 ```
 
 2. ### a questo punto si apre l'editor di testo con elencate le commit individuate dal comando precedente
@@ -101,4 +101,9 @@ git diff-tree --no-commit-id --name-only -r $ID1^ $ID2
 - delle ultime `NUM` commit
 ```sh
 git diff --name-only HEAD~$NUM
+```
+
+## Undo dell'ultimo commit senza perdere le modifiche (tipicamente si usa quando ci si è accorti di aver fatto una commit incompleta)
+```sh
+git reset --soft HEAD^
 ```
