@@ -14,6 +14,12 @@ dism.exe /Online /Disable-Feature:Microsoft-Hyper-V-All
   - specifica dell'utente: `%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup`
   - di tuti gli utenti: `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp`
 
+## Creare immagine di sistema senza usare software di terze parti
+- https://www.ilsoftware.it/articoli.asp?tag=Creare-immagine-di-sistema-Windows-10-senza-usare-software-di-terze-parti_18523
+
+## Configurare server SSH
+- https://www.ilsoftware.it/articoli.asp?tag=SSH-e-SFTP-come-creare-un-server-sicuro-in-Windows-10_19669
+
 ## Sbloccare gli aggiornamenti di Windows
 - chiudere la finestra degli aggiornamenti di Windows
 - avviare come amministratore un Prompt dei comandi ed eseguire i seguenti comandi
