@@ -467,3 +467,5 @@ si possono anche creare direttamente oggetti datetime che siano timezone aware
 dt_us_east = datetime.datetime.now(tz=us_east_tz)
 dt_us_east = datetime.datetime(2019, 5, 12, 21, 03, 23, tzinfo=us_east_tz)
 ```
+
+- [esempio in cui si formatta un `datetime` in formato ISO](https://techmonger.github.io/32/pytz-example-conversion/)
