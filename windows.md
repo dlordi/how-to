@@ -35,8 +35,10 @@ dism.exe /Online /Disable-Feature:Microsoft-Hyper-V-All
 ## Creare immagine di sistema senza usare software di terze parti
 - https://www.ilsoftware.it/articoli.asp?tag=Creare-immagine-di-sistema-Windows-10-senza-usare-software-di-terze-parti_18523
 
+
 ## Configurare server SSH
 - https://www.ilsoftware.it/articoli.asp?tag=SSH-e-SFTP-come-creare-un-server-sicuro-in-Windows-10_19669
+
 
 ## Sbloccare gli aggiornamenti di Windows
 - chiudere la finestra degli aggiornamenti di Windows
@@ -59,11 +61,13 @@ net stop cryptsvc
   - https://docs.microsoft.com/it-it/windows/deployment/update/windows-update-resources
   - https://www.howtogeek.com/247380/how-to-fix-windows-update-when-it-gets-stuck/
 
+
 ## mount di una condivisione di rete come unità disco
 ```bat
 net use Z: \\percorso\share\
 ```
   - aggiungere `/PERSISTENT:YES` per fare in modo che mantenga l'impostazione al riavvio
+
 
 ## unmount di una unità di rete precedentemente montata
 ```bat
