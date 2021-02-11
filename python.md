@@ -469,3 +469,32 @@ dt_us_east = datetime.datetime(2019, 5, 12, 21, 03, 23, tzinfo=us_east_tz)
 ```
 
 - [esempio in cui si formatta un `datetime` in formato ISO](https://techmonger.github.io/32/pytz-example-conversion/)
+
+# esempio di interfaccia C++/Python con `ctypes` su Linux
+
+- sorgente `mylib.cpp`
+```cpp
+#include iostream
+
+extern "C" {
+	int sum(int, int);
+}
+
+int sum(int a, int b) {
+	return a + b;
+}
+```
+
+- compilare il sorgente in uno shared object
+```sh
+g++ -c -fPIC mylib.cpp -o mylib.o
+g++ mylib.o -shared -o mylib.so
+```
+
+- sorgente python per richiamare il precedente shared object
+```py
+import ctypes
+cpplib = ctypes.dll.LoadLibrary('./mylib.so')
+print(cpplib.sum(4, 5))
+```
+
