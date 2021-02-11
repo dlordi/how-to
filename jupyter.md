@@ -9,9 +9,7 @@ py -m pip install -U pandas jupyterlab
 ```sh
 py -m jupyter notebook
 ```
-  - se l'avvio abortisce con un errore `NotImplementedError` modificare il file
-  C:\Python38\Lib\site-packages\tornado\platform\asyncio.py
-  aggiungendo questo frammento dopo le import principali
+  - se l'avvio abortisce con un errore `NotImplementedError` modificare il file `C:\Python38\Lib\site-packages\tornado\platform\asyncio.py` aggiungendo questo frammento dopo le import principali
 ```py
 import sys
 
