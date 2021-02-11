@@ -16,3 +16,5 @@ npm update
 ```sh
 npm update $PACKAGE
 ```
+
+- la cache di npm è in `%APPDATA%\npm-cache`
