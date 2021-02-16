@@ -9,6 +9,7 @@ dism.exe /Online /Disable-Feature:Microsoft-Hyper-V-All
 ```
 - vedi anche https://www.poweronplatforms.com/enable-disable-hyper-v-windows-10-8/
 
+
 ## Directory speciali
 - esecuzione automatica
   - specifica dell'utente: `%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup`
@@ -62,18 +63,6 @@ net stop cryptsvc
   - https://www.howtogeek.com/247380/how-to-fix-windows-update-when-it-gets-stuck/
 
 
-## mount di una condivisione di rete come unità disco
-```bat
-net use Z: \\percorso\share\
-```
-  - aggiungere `/PERSISTENT:YES` per fare in modo che mantenga l'impostazione al riavvio
-
-
-## unmount di una unità di rete precedentemente montata
-```bat
-net use Z: /delete
-```
-
 ## Modificare nome e azienda di installazione
 ```reg
 Windows Registry Editor Version 5.00
@@ -84,6 +73,17 @@ Windows Registry Editor Version 5.00
 ```
 
 ## Utility varie da riga di comando
+
+- mount di una condivisione di rete come unità disco
+```bat
+net use Z: \\percorso\share\
+```
+  - aggiungere `/PERSISTENT:YES` per fare in modo che mantenga l'impostazione al riavvio
+
+- unmount di una unità di rete precedentemente montata
+```bat
+net use Z: /delete
+```
 
 - controllo del disco
 ```bat
@@ -128,6 +128,18 @@ netsh wlan show profile name="ProfileName" key=clear
 ```bat
 powercfg -energy
 ```
+
+- riavvio con `shutdown`
+  - `-r`: riavvio
+  - `-s`: spegnimento
+  - `-l`: logoff
+  - `-t xx`: dove `xx` è il numero di secondi di attesa prima del riavvio/spegnimento/logoff
+  - `-i`: visualizza un dialog box in cui scegliere l'operazione da eseguire
+  - `-a`: abortisce la precedente richiesta
+  - `-h`: hibernate
+  - `-y`: non visualizza la conferma per lo spegnimento
+  - `-f`: forza l'azione selezionata
+  - `-c message`: specifica un messaggio di shutdown
 
 ---
 
