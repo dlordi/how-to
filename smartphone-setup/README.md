@@ -1,0 +1,262 @@
+# Setup cellulare Motorola Moto Z2
+
+- Aggiornamento generale delle app preinstallate con PlayStore
+- Installare MyPhoneExplorer
+  - Creare calendario locale **Telefono** (si deve chiamare esattamente così!)
+- Ripristinare calendario locale **Telefono** dal vecchio cell
+  - Bisogna usare MyPhoneExplorer e lo script python `C:\dowe\bin\estrai-eventi-telefono.py`
+  - Dal vecchio cell, esportare con MyPhoneExplorer tutti gli eventi nel file `C:\Users\Domenico\Desktop\cal.vcs`; per farlo, trovare un evento qualsiasi del calendario che si vuole esportare, click con il tasto destro e poi scegliere `Importa/Esporta` → `Esporta l'intero calendario ...`
+  - Eseguire lo script `C:\dowe\bin\estrai-eventi-telefono.py` che genererà il file `C:\Users\Domenico\Desktop\cal2.vcs` da importare sul nuovo cellulare con MyPhoneExplorer
+- Riportare SMS (usare MyPhoneExplorer)
+  - Sul vecchio cellulare, espandere tutte le conversazioni, selezionare tutti i messaggi e con il tasto destro, esportarli in un file .sms
+  - Sul nuovo cellulare (quando richiesto, cambiare l'app predefinita per i messaggi e poi ripristinare quella originale)
+    - andare nella sezione "Archivio (computer)" dei Messaggi, tasto destro, "Importa"
+    - dopo averli importati in archivio, selezionarli tutti e copiarli nella memoria del dispositivo (tasto destro, "Copia sul dispositivo" -> "Nella memoria originale")
+    - a questo punto possono essere cancellati da "Archivio (computer)"
+- Installare Keepass2Android Offline
+  - Aprire il database delle password e abilitare l'impronta
+- Impostare le suonerie:
+  - Telefono: **Pyxis**
+  - Notifica: **Tejat**
+  - Sveglia: **Osmium**
+  - Vibrazione per chiamate: **ON**
+  - Suoni all'accensione: **DISABILITATO**
+- Togliere luminosità adattiva e abilitare il filtro luce blu
+- Sveglie da configurare
+  - 06:00: Casa/iGuzzini
+  - 06:30: App./TF
+  - 07:00: App./Seriart&Torresi/iGuzzini
+  - 07:40: App./Ufficio
+  - 08:30: App./Ufficio
+  - **Riposo**: dalle 23:00 alle 07:00
+- Accoppiare il bluetooth della macchina
+- Riportare i file locali (non necessario se si usa una scheda SD)
+  - Fra le altre, sicuramente le directory: Movies, Music, dowe, Books
+- Configurare hotspot (vedi database delle password)
+- Riportare elenco telefonate (usare MyPhoneExplorer)
+  - Andare in Registro chiamate → Tutte
+  - Fare una sincronizzazione
+  - Espandere tutti i raggruppamenti
+  - Selezionare tutto
+  - Tasto destro, "Esporta elementi selezionati..."
+  - Le telefonate possono solo essere esportate in un file .csv, ma non possono essere importate nel nuovo cellulare; si possono aggiungere al file telefonate.csv presente sul vecchio cellulare e portare il file così ottenuto sul nuovo cellulare
+- Gmail
+  - Azione di notifica predefinita: **Elimina**
+  - Impostare come azione di scorrimento "Elimina" al posto di "Archivia"
+  - Aggiungere anche account Outlook
+- Riportare timers per i vari tempi di cottura
+  - Findus: 15 min
+  - Merluzzo: 12 min
+  - Minestrone: 1 ora
+  - Riso integrale: 30 min
+  - Riso: 14 min
+  - Spaghetti: 13 min
+- Disabilitare Assistente Google (si attiva quando si trascina il lato sinistro dello schermo)
+  - tenere premuto su un punto qualsiasi della home
+  - nella voce Accesso con scorrimento, impostare **Nessuna*+
+
+---
+
+- Riportare stazioni radio
+  - Frequenza FM 88.10: boh!
+
+---
+
+## App da installare e configurazioni
+
+- Adobe Acrobat
+  - Disabilitare Invia informazioni sull'utilizzo
+- AgenziaEntrate
+- Amazon Shopping
+- Android Auto
+- Aruba Firma
+- ArubaPEC
+  - Proteggi con impronta digitale: **ABILITATO**
+- BancoPosta
+  - Impostare accesso con impronta digitale
+  - Impostare il nuovo cellulare come dispositivo predefinito
+  - Riportare operazioni rapide di ricarica telefonica
+    - 20€ per la chiavetta USB (nome: "Chiavetta USB")
+    - 10€ per il mio cellulare (nome: "Mia SIM")
+- Calcolatrice
+  - Tema: SCURO
+- Calendario
+  - Mostra numero settimana: ABILITATO
+- Chrome
+  - 1. Schede
+    - https://www.repubblica.it
+    - https://lab.gedidigital.it/gedi-visual/2020/coronavirus-i-contagi-in-italia/?ref=RHTP-BH-I0-P2-S1-T1
+    - https://bennet.com/storefinder/iper/0018
+  - 2.
+    - https://www.staseraintv.com
+    - https://www.staseraintv.com/programmi_stasera_la7.html#pal
+  - 3.
+    - https://www.radio24.ilsole24ore.com/programmi/lazanzara/puntata/trasmissione-22-marzo-2021-205925-ADtdqISB (come sito desktop)
+    - http://terremoti.ingv.it/events?starttime=2021-02-13+00%3A00%3A00&endtime=2021-02-20+23%3A59%3A59&last_nd=7&minmag=2&maxmag=10&mindepth=-10&maxdepth=1000&minlat=-90&maxlat=90&minlon=-180&maxlon=180&minversion=100&limit=30&orderby=ot-desc&tdmt_flag=-1&lat=0&lon=0&maxradiuskm=-1&wheretype=area
+    - https://css-tricks.com/snippets/css/complete-guide-grid/#grid-powerful
+    - https://www.google.com/search?q=classifica+serie+a&oq=classi&aqs=chrome.0.0i131i433j69i57j0i131i433l2j69i65.2837j0j7&client=ms-android-motorola-rev2&sourceid=chrome-mobile&ie=UTF-8#scso=_PtYfYI-JNpabkgXwlJzwAg85:0
+  - 4.
+    - ivoltidigiano.blog
+    - https://spazio70.com/societa-e-cultura/cinema-e-musica/tra-siringhe-e-manicomi-i-fantasmi-di-gerry-sperandini-lultimo-imperatore-di-roma/?cn-reloaded=1
+  - 5.
+    - https://www.auslromagna.it/vaccinazione-anti-covid-19
+    - https://vaccinocovid.regione.emilia-romagna.it/quanti-sono-stati-vaccinati
+- eBay
+- ER Salute
+- ~~ES Gestore File~~
+- FatturAE
+- ~~Feedly~~
+- Files (app di Google per gestire i file della memoria; integra anche un lettore multimediale)
+- Firefox
+  - eseguire l'accesso in modo da ripristinare bookmark, impostazioni, ecc...
+- ~~FRCAM~~
+- Google Keep
+- Google News
+- iFob Control
+  - Farsi abilitare da Giulio
+  - Abilitare accesso con impronta digitale
+- INPS Mobile
+- iPatente
+- Keepass2Android Offline
+  - Abilitare accesso con impronta digitale
+- LepidaID
+- ~~LibreOffice Viewer~~
+- LinkedIn
+- Lithium
+  - Keep screen on: ABILITATO
+  - Fullscreen reading: ABILITATO
+- ~~Meteo Arpa~~
+- My Citroen
+- MyPhoneExplorer
+- MyTIM
+- MyWay 3.0
+- ~~Nilox Smart Security~~
+- ~~PayPal~~
+- PosteID
+- Postepay
+- ~~Postepay+~~
+- ~~QR Barcode Scanner~~
+- QuickEdit
+  - Lingua: **AUTOMATICO**
+  - Codifica Predefinita: **AUTOMATICO**
+  - Interruzione di Riga: **AUTOMATICO**
+  - Carattere rientro: **TAB**
+  - A capo automatico: **ABILITATO**
+  - Cassetto di navigazione delle cartelle: **ABILITATO**
+  - Indentazione automatica: **ABILITATO**
+  - Annulla con il pulsante indietro: **DISABILITATO**
+  - Nascondi i tipi di file sconosciuti: **DISABILITATO**
+  - Riprendi sessione: **ABILITATO**
+  - Visualizza le parole suggerite: **OFF**
+  - Maiuscole automatiche: **ABILITATO**
+  - Vedi accessori: **DISABILITATO**
+  - Numero di linea: **ABILITATO**
+  - Tipo di carattere: **MONOSPACE**
+  - Dimensione carattere: **16sp**
+  - Interlinea: **0sp**
+  - Salvataggio automatico: **DISABILITATO**
+  - Tema: **NERO**
+  - A schermo intero: **DISABILITATO**
+  - Barra di formattazione rapida: **ABILITATO**
+  - A capo: **ABILITATO**
+- Radio24
+- RaiPlay
+  - eseguire accesso
+- ~~RaiPlay Radio~~
+- RD Client
+  - General: Help improve Remote Desktop: **OFF**
+  - Display: Lock to landscape
+- ~~Reddit~~
+- Skype
+  - eseguire accesso
+- SoundHound
+- ~~Stazioni IP~~
+- Trello
+  - eseguire accesso
+- ~~Trenitalia~~
+- Twitch
+- Twitter
+- ~~UfficioPostale~~
+- VLC
+  - video sempre in orizzontale
+- WhatsApp
+  - vedere questa guida per backup in locale invece di Google Drive: https://www.chimerarevo.com/guide/ripristinare-chat-whatsapp-284003/
+  - vedere anche [how-to](../whatsapp-backup.md)
+  - TLDR:
+    - SUL TELEFONINO IN USO: Fare il backup su Google Drive del telefonino attualmente in uso
+    - SPOSTARE LA SCHEDA SUL TELEFONINO NUOVO
+    - SUL TELEFONINO NUOVO
+      - Disinstallare Whatsapp
+      - Cancellare /sdcard/Whatsapp/Database
+      - Installare Whatsapp
+      - Eseguire il ripristino da Google Drive
+- YouTube
+
+## Configurazione delle schermate
+
+- Bottoni a fondo schermo
+  - Telefono
+  - Messaggi
+    - Gmail
+    - WhatsApp
+    - ArubaPEC
+    - Messaggi
+    - Skype
+    - LinkedIn
+  - Files
+  - Svago
+    - Chrome
+    - Firefox
+    - ~~Feedly~~
+    - QuickEdit
+    - Adobe Acrobat
+    - YouTube
+    - Twitch
+    - RaiPlay
+    - ~~RaiPlay Radio~~
+    - Radio FM
+    - Radio24
+    - News (Google)
+    - Lithium
+    - Twitter
+- Schermata principale
+  - Widget Orologio digitale
+  - ID adesso (SoundHound)
+  - Sound Search
+  - In auto (widget, richiede di condividere le attività web)
+  - Traffico (widget)
+  - Android Auto
+  - MyPhoneExplorer
+  - Sicurezza
+    - Keepass2Android
+    - iFob Control
+    - Lepida ID
+    - ~~Nilox~~
+  - Spostamenti
+    - Maps
+    - MyWay 3.0
+    - ~~Meteo Arpa~~
+    - Traduttore
+    - ~~Meteo Google~~ (come si abilita?)
+  - Play Store
+  - Servizi
+    - MyTIM
+    - BancoPosta
+    - Postepay
+    - ~~Postepay+~~
+    - ~~UfficioPostale~~
+    - PosteID
+    - MyCitroen
+    - ~~PayPal~~
+    - ~~eBay~~
+    - Amazon Shopping
+    - iPatente
+    - AgenziaEntrate
+    - FatturAE
+    - INPS Mobile
+    - ER Salute
+  - Widget Player VLC
+- Schermata secondaria
+  - Widget calendario
+  - Widget Keep
+  - Widget Note MyPhoneExplorer
