@@ -1,11 +1,76 @@
 
+- installazione dei tool a riga di comando
 ```sh
 npm install -g create-react-app
 ```
 
+- comandi tipici per creare una nuova app e avviarla
+```sh
+create-react-app my-app
+cd my-app
+npm run start
+```
+
+- build per deploy (l'output viene generato nella directory build del progetto)
 ```sh
 npm run build
 ```
+
+- NOTE:
+  - per impostare la classe CSS di un tag usare `className="..."` invece di `class="..."`
+  - per impostare lo stile inline CSS di un tag usare `style={{display: 'block'}}` invece di `style="..."` (lo stile è un dizionario)
+  - per visualizzare una variabile stringa direttamente nella pagina usare `{nome_variabile}`
+
+---
+
+- esempio di react usato direttamente in una pagina HTML senza JSX
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>React without JSX</title>
+<style>
+.list-item {
+	padding: 10px;
+	border: 10px solid #ccc;
+}
+</style>
+</head>
+<body>
+<h1>React without JSX</h1>
+<hr>
+<!-- copiati da https://reactjs.org/docs/cdn-links.html -->
+<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<script>
+var ListItem = function (props) {
+	return React.createElement('li', {
+		className: 'list-item'
+	}, props.title);
+};
+var List = React.createClass({
+	getInitialState: function () {
+		return {
+			items: ['Apple', 'Banana']
+		};
+	},
+	render: function () {
+		return React.createElement('div', null, [
+			React.createElement('ul', null, this.state.items.map(function (item) {
+				return React.createElement(List, {title: item});
+			}))
+		]);
+	}
+});
+</script>
+</body>
+</html>
+```
+
+---
 
 ```sh
 firebase init
