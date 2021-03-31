@@ -2,6 +2,20 @@
 
 [tutorial](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
 
+## Rinominare il branch `master` in `main`
+```sh
+git branch -m master main
+git push -u origin main
+```
+- a questo punto occorre cancellare anche il branch `master` remoto
+- per farlo bisogna prima impostare un altro branch come quello default
+  - per github: ...
+  - per gitlab: Settings -> Repository -> Default branch
+    - se protetta, si può cancellare solo da interfaccia web andando su Repository -> Branches
+```sh
+git push origin --delete master
+```
+
 ## Preparazione di un repo locale da sincronizzare su GitHub
 
 ```sh
@@ -23,7 +37,7 @@ git add $NOME_DEL_FILE # oppure "git add --all" per aggiungere tutti i file, anc
 git reset $NOME_DEL_FILE # rimuove un file dall'area di staging (il contrario di git add); usare "git reset" per rimuovere tutti i file
 git commit -m "$MESSAGGIO" # usare messaggi nella forma "se applicato, questo commit farà ..."
 git log # visualizzare l'elenco dei commit; se si aggiunge -p visualizza anche le diff
-git push -u origin master # richiede la password di github; i push successivi possono essere fatti anche solo con "git push"
+git push -u origin main # richiede la password di github; i push successivi possono essere fatti anche solo con "git push"
 ```
 
 ## Clonare un repo remoto
