@@ -31,6 +31,65 @@
 <tr><td style="font:menu;">WindowText</td><td style="width:50%;border:1px solid black;background-color:WindowText;">&nbsp;</td></tr>
 </table>
 
+## grid
+```html
+<style>
+	.site {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto 1fr 3fr;
+		grid-template-areas:
+			"page-title page-title"
+			"main-content masthead"
+			"main-content sidebar"
+			"footer footer"
+	}
+
+	.page-title {
+		background: blue;
+		grid-area: page-title;
+	}
+
+	.main-content {
+		background: yellow;
+		grid-area: main-content;
+	}
+
+	.masthead {
+		background: red;
+		grid-area: masthead;
+	}
+
+	.sidebar {
+		background: green;
+		grid-area: sidebar;
+	}
+
+	.footer {
+		background: magenta;
+		grid-area: footer;
+	}
+
+	@media screen and (min-width: 34em) {
+		.site {
+			grid-template-columns: 2fr 1fr 1fr;
+			grid-template-areas:
+				"page-title page-title page-title"
+				"main-content masthead masthead"
+				"main-content sidebar footer"
+		}
+	}
+</style>
+
+<div class="site">
+	<h1 class="page-title">page-title</h1>
+	<main class="main-content">main-content</main>
+	<header class="masthead">masthead</header>
+	<aside class="sidebar">sidebar</aside>
+	<footer class="footer">footer</footer>
+</div><!-- site -->
+```
+
 ## Varie
 
 - la dimensione di default dei font è `16px`
