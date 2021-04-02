@@ -54,6 +54,8 @@
 - Disabilitare Assistente Google (si attiva quando si trascina il lato sinistro dello schermo)
   - tenere premuto su un punto qualsiasi della home
   - nella voce Accesso con scorrimento, impostare **Nessuna*+
+- Abilitare modalità sviluppatore
+  - Impostazioni ➡ Informazioni sul telefono ➡ fare tap in continuazione su Numbero build
 
 ---
 
