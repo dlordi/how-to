@@ -147,3 +147,26 @@ yum install -y gcc-c++ make
 curl -sL https://rpm.nodesource.com/setup_12.x | sudo -E bash -
 yum install -y nodejs
 ```
+
+## CentOS 6.5
+
+- aggiornamento dei riferimenti ai repo
+```txt
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Determining fastest mirrors
+YumRepo Error: All mirror URLs are not using ftp, http[s] or file.
+ Eg. Invalid release/repo/arch combination/
+removing mirrorlist with no valid mirrors: /var/cache/yum/i386/6/base/mirrorlist.txt
+Error: Cannot find a valid baseurl for repo: base
+```
+
+- `vim /etc/yum.repos.d/CentOS-Base.repo`
+- commentare `mirrorlist` e abilitare `baseurl`
+- sostituire i link in `baseurl` con `vault`. e togliere `/centos/`
+  - devono essere fatti così: `http://vault.centos.org/$releasever/os/$basearch/`
+- `yum update`
+
+## CentOS 8
+
+- configurare SSL con certbot
+https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-centos-8
