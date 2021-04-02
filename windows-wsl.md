@@ -1,6 +1,10 @@
-per attivarlo (vedi anche https://docs.microsoft.com/it-it/windows/wsl/install-win10)
+- per installarlo (vedi anche https://docs.microsoft.com/it-it/windows/wsl/install-win10)
   - cercare nel menu start la voce `funzionalità`
   - nella finestra che si apre cercare `Sottosistema linux`
+  - in alternativa, usare questo comando in una powershell come amministratore
+```bat
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+```
 
 ### Comandi utili da Prompt dei comandi
 - `wsl` fa partire il sottosistema linux in una shell
