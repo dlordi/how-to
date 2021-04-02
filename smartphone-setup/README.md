@@ -193,6 +193,8 @@
       - Installare Whatsapp
       - Eseguire il ripristino da Google Drive
 - YouTube
+  - Generali ➡ Riproduzione con audio disattivato nei feed: **NESSUNA**
+  - Riproduzione automatica video successivo: **OFF**
 
 ## Configurazione delle schermate
 
