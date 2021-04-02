@@ -1,22 +1,22 @@
-# WSL:
+per attivarlo (vedi anche https://docs.microsoft.com/it-it/windows/wsl/install-win10)
+  - cercare nel menu start la voce `funzionalità`
+  - nella finestra che si apre cercare `Sottosistema linux`
 
-Per attivarlo
-- cercare nel menu start la voce `funzionalità`; nella finestra che si apre cercare `Sottosistema linux`
-- vedi anche https://docs.microsoft.com/it-it/windows/wsl/install-win10
-
-### Comandi utili da Windows
+### Comandi utili da Prompt dei comandi
 - `wsl` fa partire il sottosistema linux in una shell
-- `wslconfig` dato che è possibile installare più sottosistemi, con questo comando si possono gestire quelli installati (ad esempio, si può specificare il sottosistema di default con il comando `wslconfig /setdefault <sottosistema>`)
 - `wsl --list --all --verbose` per elencare tutti i sistemi installati
+- per disinstallare un sistema **CANCELLANDO ANCHE TUTTO IL FILE SYSTEM**
+  - `wsl --unregister %NOME_DISTRO%`
+- `wslconfig` è un comando utile per fare alcune operazioni che comunque si possono svolgere con `wsl`
 
-## Il filesystem di WSL è in
-`C:\Users\<utente>\AppData\Local\lxss\rootfs`
+### Varie
+- il filesystem di WSL è in `%USERPROFILE%\AppData\Local\lxss\rootfs`
 
-## dal prompt di dos
+## ~~dal prompt di dos~~
 ```sh
 lxrun /uninstall /full
 lxrun /install /y
 ```
 
-# CentWSL
+# ~~CentWSL~~
 - [riferimento principale](https://github.com/yuk7/CentWSL)
