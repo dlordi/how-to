@@ -52,6 +52,11 @@
 
 - installare [Firefox](https://www.mozilla.org/it/firefox/new/) e accedere con l'account per sincronizzare i bookmark
 
+- se si installa git con chocolatey usare questo comando
+  ```bat
+  choco install git.install --params "/GitOnlyOnPath /NoAutoCrlf /NoShellIntegration /NoGuiHereIntegration /NoShellHereIntegration /SChannel"
+  ```
+
 - generare le chiavi SSH per GitHub e GitLab
 
 - installare [Nodepad++](https://notepad-plus-plus.org/downloads/)
