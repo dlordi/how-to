@@ -1,3 +1,23 @@
+# Configurazione
+- configurare utente e nome del branch principale a livello globale
+	```sh
+	git config --global user.name "Domenico Lordi"
+	git config --global user.email "domenico.lordi@gmail.com"
+	git config --global init.defaultBranch main
+	```
+- ~~aggiungere al file `$HOME/.gitconfig` questo contenuto~~
+	```txt
+	[alias]
+	a = add -A
+	cam = commit -am
+	s = status
+	pom = push origin main
+	puom = pull origin main
+	cob = checkout -b
+	[color]
+	ui = auto
+	```
+
 # Git & GitHub
 
 [tutorial](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
