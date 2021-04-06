@@ -142,24 +142,7 @@
 	```sh
 	brew install git
 	```
-- configurare utente e nome del branch principale a livello globale
-	```sh
-	git config --global user.name "Domenico Lordi"
-	git config --global user.email "domenico.lordi@gmail.com"
-	git config --global init.defaultBranch main
-	```
-- ~~aggiungere al file `$HOME/.gitconfig` questo contenuto~~
-	```txt
-	[alias]
-	a = add -A
-	cam = commit -am
-	s = status
-	pom = push origin master
-	puom = pull origin master
-	cob = checkout -b
-	[color]
-	ui = auto
-	```
+- per la configurazione vedere [how-to di git](../git.md)
 
 # NodeJS
 - installazione
