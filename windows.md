@@ -1,3 +1,10 @@
+## Product Key
+- visualizza il product key originale (memorizzato nel BIOS) con cui è stato fornito il computer (potrebbe essere diverso da quello attualmente in uso se è stato fatto un aggiornamento)
+```bat
+wmic path softwarelicensingservice get OA3xOriginalProductKey
+```
+- [software ProduKey](https://www.nirsoft.net/utils/product_cd_key_viewer.html#DownloadLinks) (per scaricarlo ed usarlo bisogna disattivare Windows Defender perché viene riconosciuto come software pericoloso)
+
 ## Hyper-V
 - per abilitarlo da prompt con permessi di amministratore
 ```bat
