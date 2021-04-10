@@ -132,7 +132,7 @@
 - MyPhoneExplorer
 - MyTIM
 - MyWay 3.0
-- ~~Nilox Smart Security~~
+- ~~Nilox Smart Security~~ non più disponibile: usare Reolink (compatibile con la telecamera)
 - ~~PayPal~~
 - PosteID
 - Postepay
@@ -235,7 +235,7 @@
     - Keepass2Android
     - iFob Control
     - Lepida ID
-    - ~~Nilox~~
+    - Reolink
   - Spostamenti
     - Maps
     - MyWay 3.0
