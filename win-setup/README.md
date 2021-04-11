@@ -65,6 +65,8 @@
   - caratteri tilde e backtick
   - drag delle finestre tenendo premuto il tasto windows
 
+- solo per Windows 10 Home, installare [RDPWrap](https://github.com/stascorp/rdpwrap/releases) per poter accedere al PC con desktop remoto 
+
 - installare [PowerToys](https://github.com/microsoft/PowerToys/releases/)
 
 - ~~abilitare wsl2 (Sottosistema Windows per Linux)~~
