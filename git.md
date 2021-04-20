@@ -5,6 +5,10 @@
 	git config --global user.email "domenico.lordi@gmail.com"
 	git config --global init.defaultBranch main
 	```
+- configura la gestione del newline per checkin e checkout in modo da non modificare i file
+	```sh
+	git config --global core.autocrlf false
+	```
 - ~~aggiungere al file `$HOME/.gitconfig` questo contenuto~~
 	```txt
 	[alias]
