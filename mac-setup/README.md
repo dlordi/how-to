@@ -321,11 +321,6 @@
 	- **ATTENZIONE**: non viene riconosciuta come stampante multifunzione: non si riesce ad usare lo scanner
 
 # ~~Bash~~ sostituita da zsh
-- ~~copiare nel file `$HOME/.bash_profile` [queste impostazioni](.bash_profile)~~
-- ~~assicurarsi che il file `$HOME/.bash_profile` abbia i seguenti permessi: `-rw-r--r--`~~
-	```sh
-	chmod 644 $HOME/.bash_profile
-	```
 
 # ~~iTerm2~~
 - utilizzo del font Source Code Pro
