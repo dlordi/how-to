@@ -128,6 +128,9 @@
   - Keep screen on: ABILITATO
   - Fullscreen reading: ABILITATO
 - ~~Meteo Arpa~~
+- Meteo Aeronautica
+  - Città predefinita: FORLIMPOPOLI
+  - Attiva la localizzazione: On
 - My Citroen
 - MyPhoneExplorer
 - MyTIM
@@ -242,6 +245,7 @@
     - ~~Meteo Arpa~~
     - Traduttore
     - ~~Meteo Google~~ (come si abilita?)
+    - Meteo Aeronautica
   - Play Store
   - Servizi
     - MyTIM
