@@ -145,3 +145,10 @@ git diff --name-only HEAD~$NUM
 ```sh
 git reset --soft HEAD^
 ```
+
+## Ritornare all'ultimo commit cancellando le modifiche in corso
+```sh
+git reset HEAD --hard
+git clean -fd # cancella i nuovi file aggiunti
+```
+  - l'ultimo comando NON cancella i file indicati in `.gitignore` (usare `-x` al posto di `-fd` per farlo)
