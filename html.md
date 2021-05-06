@@ -5,6 +5,4 @@
 - If `async` is not present and `defer` is present: The script is executed when the page has finished parsing
 - If neither `async` or `defer` is present: The script is fetched and executed immediately, before the browser continues parsing the page
 
-<div style="background-color:white">
-  ![](https://html.spec.whatwg.org/images/asyncdefer.svg)
-</div>
+<img src="https://html.spec.whatwg.org/images/asyncdefer.svg">
