@@ -1,9 +1,9 @@
 
-## window.location
+## Oggetto `window.location`
 
-http://localhost:3000/index.html?key1=val1&key2=val2&#anchor
+Esempio: `http://localhost:3000/index.html?key1=val1&key2=val2&#anchor`
 
-|                            |                                                                |
+| Proprietà                  | Valore                                                         |
 |----------------------------|----------------------------------------------------------------|
 | `window.location.href`     | `http://localhost:3000/index.html?key1=val1&key2=val2&#anchor` |
 | `window.location.protocol` | `http:`                                                        |
