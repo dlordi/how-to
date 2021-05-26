@@ -136,6 +136,7 @@
 - MyTIM
 - MyWay 3.0
 - ~~Nilox Smart Security~~ non più disponibile: usare Reolink (compatibile con la telecamera)
+- OpenWeather
 - ~~PayPal~~
 - PosteID
 - Postepay
@@ -246,6 +247,7 @@
     - Traduttore
     - ~~Meteo Google~~ (come si abilita?)
     - Meteo Aeronautica
+    - OpenWeather
   - Play Store
   - Servizi
     - MyTIM
