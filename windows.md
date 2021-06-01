@@ -1,3 +1,9 @@
+## Visualizza account in uso
+```bat
+RunDll32.exe keymgr.dll,KRShowKeyMgr
+```
+- vedi anche [altri comandi rundll32](https://www.thewindowsclub.com/rundll32-shortcut-commands-windows)
+
 ## Product Key
 - visualizza il product key originale (memorizzato nel BIOS) con cui è stato fornito il computer (potrebbe essere diverso da quello attualmente in uso se è stato fatto un aggiornamento)
 ```bat
