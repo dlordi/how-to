@@ -2,8 +2,13 @@
   - modificare il registry con [questo file](assets/disable-telemetry.reg)
   - riavviare il computer
 
+- assicurarsi che la dimensione del testo e delle icone sia al 100% e non al 125%
+  - tasto destro sul Desktop, scegliere Impostazioni schermo e poi controllare la voce Ridimensionamento e layout
+
 - disabilitare tutti i suoni
   - ![](assets/suoni.png)
+
+- disabilitare avvio automatico di OneDrive
 
 - accedere automaticamente con un utente senza dover inserire la password all'avvio **NON DISPONIBILE IN WINDOWS 10 HOME 20H2**
   ```bat
@@ -67,7 +72,7 @@
 
 - solo per Windows 10 Home, installare [RDPWrap](https://github.com/stascorp/rdpwrap/releases) per poter accedere al PC con desktop remoto 
 
-- installare [PowerToys](https://github.com/microsoft/PowerToys/releases/)
+- ~~installare [PowerToys](https://github.com/microsoft/PowerToys/releases/)~~
 
 - ~~abilitare wsl2 (Sottosistema Windows per Linux)~~
 
