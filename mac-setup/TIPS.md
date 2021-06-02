@@ -11,6 +11,7 @@
 	- `Shift+Command+A`: apre una finestra in Applicazioni
 	- `Shift+Command+D`: apre una finestra nella Scrivania/Desktop
 	- `Shift+Command+H`: apre una finestra nella home directory
+	- `Shift+Command+.`: visualizza/nasconde i file nascosti (quelli che iniziano con `.`)
 	- `Control+Command+Q`: fa il logout senza mettere il computer in sleep
 
 - Dock
