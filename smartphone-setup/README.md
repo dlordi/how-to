@@ -173,6 +173,7 @@
   - General: Help improve Remote Desktop: **OFF**
   - Display: Lock to landscape
 - ~~Reddit~~
+- Rifiutologo (app di HERA per sapere come fare la raccolta differenziata)
 - Skype
   - eseguire accesso
 - SoundHound
@@ -265,6 +266,7 @@
     - FatturAE
     - INPS Mobile
     - ER Salute
+    - Rifiutologo
   - Widget Player VLC
 - Schermata secondaria
   - Widget calendario
