@@ -112,6 +112,12 @@
 	- ~~andare in Componenti aggiuntivi ➡ Temi ➡ disattivare temi Chiaro e Scuro in modo che resti attivo quello Predefinito~~
 - ~~impostare YouTube con il tema scuro~~ (sembra che lo faccia in automatico...)
 
+# Sublime Text
+- installazione
+	```sh
+	brew install --cask sublime-text
+	```
+
 # Terminale
 - aumentare la dimensione del font
 	- Preferenze ➡ Profili ➡ Testo ➡ Font (usare dimensione 14)
@@ -158,6 +164,10 @@
 	```
 
 # Visual Studio Code
+- installazione
+	```sh
+	brew install --cask visual-studio-code
+	```
 - **TODO**: accedere per poter sincronizzare tutte le impostazioni e i plugins installati
 - estensioni utili
 	```txt
