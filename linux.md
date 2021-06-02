@@ -4,6 +4,11 @@
 netstat -altnp | grep $NUM_PORTA
 ```
 
+## Killare un processo in ascolto su una porta TCP
+```sh
+fuser -n tcp -k $NUM_PORTA
+```
+
 ## eseguire `top` con autorefresh
 ```sh
 top -d .2
@@ -40,7 +45,7 @@ mount -t tmpfs tmpfs /mnt/ramdisk -o size=8192M
 ```
 
 ## configurazione `bash` in `.bash_profile`
-- vedi bash.md
+- vedi [bash.md](bash.md)
 
 ## per terminare una shell ma scollegare i processi lanciati senza nohup in modo che non vengano terminati
 ```sh
