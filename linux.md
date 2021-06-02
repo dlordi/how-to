@@ -40,17 +40,7 @@ mount -t tmpfs tmpfs /mnt/ramdisk -o size=8192M
 ```
 
 ## configurazione `bash` in `.bash_profile`
-```txt
-alias ..='cd ..'
-shopt -s histappend
-bind '"\e[A": history-search-backward'
-bind '"\e[B": history-search-forward'
-alias gta='git add -A'
-alias gtc='git commit -m'
-alias gtd='git diff'
-alias gtl='git log'
-alias gts='git status -s'
-```
+- vedi bash.md
 
 ## per terminare una shell ma scollegare i processi lanciati senza nohup in modo che non vengano terminati
 ```sh
