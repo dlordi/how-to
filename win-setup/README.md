@@ -8,6 +8,12 @@
 - disabilitare tutti i suoni
   - ![](assets/suoni.png)
 
+- installare keepass
+
+- installare [Firefox](https://www.mozilla.org/it/firefox/new/) e accedere con l'account per sincronizzare i bookmark
+
+- eseguire un aggiornamento del sistema
+
 - disabilitare avvio automatico di OneDrive
 
 - accedere automaticamente con un utente senza dover inserire la password all'avvio **NON DISPONIBILE IN WINDOWS 10 HOME 20H2**
@@ -52,10 +58,6 @@
   - ![](assets/profilo-scansione-documenti-ufficio.png)
 
 - creare un collegamento sul desktop alla directory `%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup`
-
-- installare keepass
-
-- installare [Firefox](https://www.mozilla.org/it/firefox/new/) e accedere con l'account per sincronizzare i bookmark
 
 - se si installa git con chocolatey usare questo comando
   ```bat
