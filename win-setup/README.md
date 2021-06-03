@@ -78,6 +78,8 @@
 
 - solo per Windows 10 Home, installare [RDPWrap](https://github.com/stascorp/rdpwrap/releases) per poter accedere al PC con desktop remoto 
 
+- installare Chrome, fare l'accesso per sincronizzare impostazioni e bookmark e impostarlo come browser predefinito
+
 - impsotare Windows Media Player come lettore multimediale predefinito
 
 - ~~installare [PowerToys](https://github.com/microsoft/PowerToys/releases/)~~
