@@ -16,11 +16,15 @@
 
 - disabilitare avvio automatico di OneDrive
 
-- accedere automaticamente con un utente senza dover inserire la password all'avvio **NON DISPONIBILE IN WINDOWS 10 HOME 20H2**
+- impostare schermo secondario come unico attivo quando collegato
+
+- abilitare luce notturna
+
+- accedere automaticamente con un utente senza dover inserire la password all'avvio
   ```bat
   control userpasswords2
   ```
-  - in Windows 10 Home 20H2 è possibile usare il programma `Autologon` della `SysinternalsSuite` per abilitare l'accesso automatico
+  - se non disponibile, usare il programma `Autologon` della `SysinternalsSuite` per abilitare l'accesso automatico
 
 - impostare lo sfondo del desktop
   - [sfondo originale di windows 10](assets/wallpaper-windows-10.jpg)
