@@ -78,6 +78,8 @@
 
 - solo per Windows 10 Home, installare [RDPWrap](https://github.com/stascorp/rdpwrap/releases) per poter accedere al PC con desktop remoto 
 
+- impsotare Windows Media Player come lettore multimediale predefinito
+
 - ~~installare [PowerToys](https://github.com/microsoft/PowerToys/releases/)~~
 
 - ~~abilitare wsl2 (Sottosistema Windows per Linux)~~
