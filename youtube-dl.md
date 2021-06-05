@@ -42,7 +42,7 @@ C: & cd %HOMEDRIVE%%HOMEPATH%\Desktop
 C:\dowe\bin\youtube-dl\youtube-dl.exe --config-location C:\dowe\bin\youtube-dl\youtube-dl.conf "https://www.twitch.tv/videos/1031714596"
 ```
 
-# download mp3 da C
+# download mp3 da C (bisogna avere ffmpeg)
 ```bat
 C: & cd %HOMEDRIVE%%HOMEPATH%\Desktop
 C:\dowe\bin\youtube-dl\youtube-dl.exe --config-location C:\dowe\bin\youtube-dl\youtube-dl.conf --extract-audio --audio-format mp3 "https://www.youtube.com/watch?v=9EjWsAXGftk"
