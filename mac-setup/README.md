@@ -330,6 +330,26 @@
 	- **ATTENZIONE**: non vengono installati dei driver specifici (che sembranon non esistere nemmeno sul sito HP) ma solo dei driver generici
 	- **ATTENZIONE**: non viene riconosciuta come stampante multifunzione: non si riesce ad usare lo scanner
 
+# Sublime Text
+- ~~installare il Package Control~~
+- ~~configurazione:~~
+	```json
+	{
+		"draw_white_space": "all",
+		"font_face": "Source Code Pro",
+		"font_size": 16,
+		"highlight_line": true,
+		"theme": "Adaptive.sublime-theme"
+	}
+	```
+
+# Rectangle (window manager: consente di spostare le finestre con delle combinazioni di tasti)
+- installazione (richiede permessi speciali)
+	```sh
+	brew install --cask rectangle
+	```
+- nella configurazione, abilitare gli aggiornamenti automatici
+
 # ~~Bash~~ sostituita da zsh
 
 # ~~iTerm2~~
@@ -348,19 +368,6 @@
 	- Preferences ➡ General ➡ Profiles ➡ Working Directory ➡ Reuse previous session's directory
 - usare le classiche combinazioni del Mac per spostarsi nel testo
 	- Preferences ➡ Keys ➡ Presets ... ➡ Natural Text Editing
-
-# ~~Sublime Text~~
-- installare il Package Control
-- configurazione:
-	```json
-	{
-		"draw_white_space": "all",
-		"font_face": "Source Code Pro",
-		"font_size": 16,
-		"highlight_line": true,
-		"theme": "Adaptive.sublime-theme"
-	}
-	```
 
 # ~~Alfred~~
 - sono state consentite le notifiche
