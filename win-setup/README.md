@@ -86,6 +86,12 @@
 
 - impostare Windows Media Player come lettore multimediale predefinito
 
+- installazione CCleaner
+  - in Impostazioni, settare la lingua su Italiano
+  - in Pulizia intelligente, disattivare tutte le voci
+  - in Avanzate, togliere la spunta da Chiedi se salvare un backup dei problemi del registro
+  - in Privacy, togliere la spunta da qualsiasi voce che comporti la condivisione di informazioni
+
 - ~~installare [PowerToys](https://github.com/microsoft/PowerToys/releases/)~~
 
 - ~~abilitare wsl2 (Sottosistema Windows per Linux)~~
