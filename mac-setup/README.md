@@ -352,6 +352,13 @@
 	```
 - nella configurazione, abilitare gli aggiornamenti automatici
 
+# VLC
+- installazione
+	```sh
+	brew install --cask vlc
+	```
+- nella configurazione, impostare lo Stile dell'interfaccia su Scuro
+
 # ~~Bash~~ sostituita da zsh
 
 # ~~iTerm2~~
