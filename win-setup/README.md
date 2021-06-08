@@ -92,6 +92,8 @@
   - in Avanzate, togliere la spunta da Chiedi se salvare un backup dei problemi del registro
   - in Privacy, togliere la spunta da qualsiasi voce che comporti la condivisione di informazioni
 
+- installare Windows Terminal dallo store
+
 - ~~installare [PowerToys](https://github.com/microsoft/PowerToys/releases/)~~
 
 - ~~abilitare wsl2 (Sottosistema Windows per Linux)~~
