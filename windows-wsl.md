@@ -1,17 +1,17 @@
-- per installarlo (vedi anche https://aka.ms/wsl2kernel o https://docs.microsoft.com/it-it/windows/wsl/install-win10)
-  - cercare nel menu start la voce `funzionalità` e nella finestra che si apre cercare `Sottosistema linux`
-  - in alternativa, eseguire questi comandi in una powershell come amministratore
+## Installazione (vedi anche https://docs.microsoft.com/it-it/windows/wsl/install-win10)
+  - eseguire questi comandi in una powershell come amministratore
 ```bat
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -NoRestart
 ```
   - fare un riavvio
+  - installare [pacchetto di aggiornamento del kernel linux](https://docs.microsoft.com/it-it/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package)
   - eseguire questi comandi in una powershell come amministratore
 ```bat
 wsl.exe --set-default-version 2
 ```
-  - installare una distribuzione dallo store (vedi anche https://aka.ms/wsl2kernel o https://docs.microsoft.com/it-it/windows/wsl/install-win10)
+  - installare una distribuzione dallo store (vedi anche https://docs.microsoft.com/it-it/windows/wsl/install-win10)
 
 ### Comandi utili da Prompt dei comandi
 - `wsl` fa partire il sottosistema linux in una shell
