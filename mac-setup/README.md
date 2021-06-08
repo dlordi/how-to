@@ -123,6 +123,8 @@
 	- Preferenze ➡ Profili ➡ Testo ➡ Font (usare dimensione 14)
 - chiudere la finestra quando si esce dalla shell
 	- Preferenze ➡ Profili ➡ Shell ➡ Quando la shell si conclude ➡ Chiudi se la shell si è conclusa senza errori
+- usare la combinazione Alt+Backspace per cancellare la parola che precede il cursore
+	- Preferenze ➡ Profili ➡ Tastiera ➡ Utilizza il tasto Opzione come tasto Meta
 
 # SSH
 - creare una coppia chiave privata/chiave pubblica
