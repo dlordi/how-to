@@ -74,6 +74,7 @@
 - generare le chiavi SSH per GitHub e GitLab
 
 - installare [Nodepad++](https://notepad-plus-plus.org/downloads/)
+  - nelle opzioni, abilitare la chiusura di un file facendo doppio click sul tab
 
 - mettere in esecuzione automatica l'eseguibile di [autohotkey](my-autohotkeys/my-autohotkeys.exe) per poter avere
   - caratteri tilde e backtick
@@ -83,7 +84,7 @@
 
 - installare Chrome, fare l'accesso per sincronizzare impostazioni e bookmark e impostarlo come browser predefinito
 
-- impsotare Windows Media Player come lettore multimediale predefinito
+- impostare Windows Media Player come lettore multimediale predefinito
 
 - ~~installare [PowerToys](https://github.com/microsoft/PowerToys/releases/)~~
 
