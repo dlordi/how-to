@@ -58,7 +58,7 @@
 - ~~impostare profilo scansione documenti a casa~~ non più necessario con il software di scansione scaricato dallo store!
   - ![](assets/profilo-scansione-documenti-casa.png)
 
-- ~~impostare profilo scansione documenti in ufficio~~ non più necessario con il software di scansione scaricato dallo store!
+- impostare profilo scansione documenti in ufficio tramite il software di scansione scaricato dallo store
   - ![](assets/profilo-scansione-documenti-ufficio.png)
 
 - creare un collegamento sul desktop alla directory `%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup`
