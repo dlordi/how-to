@@ -36,6 +36,10 @@
   - ![](assets/esplora-risorse-2.png)
   - ![](assets/esplora-risorse-3.png)
 
+- risparmio energetico (scegliere una delle due seguenti opzioni)
+  - ![](assets/risparmio-energetico.png)
+  - ![](assets/risparmio-energetico-razer.png)
+
 - disabilitare la sospensione del computer quando si chiude il coperchio del portatile **NON DISPONIBILE IN WINDOWS 10 HOME 20H2**
   - ![](assets/chiusura-coperchio.png)
 
@@ -47,10 +51,6 @@
   - ![](assets/barra-lingua-2.png)
   - ![](assets/barra-lingua-3.png)
   - ![](assets/barra-lingua-4.png)
-
-- risparmio energetico (scegliere una delle due seguenti opzioni)
-  - ![](assets/risparmio-energetico.png)
-  - ![](assets/risparmio-energetico-razer.png)
 
 - ~~installare software per la chiavetta Internet~~ non più necessario con la saponetta wifi
   - disabilitare la voce "Consenti a Windows di gestire questa connessione" nelle "Impostazioni di Sistema" -> "Rete e Internet" -> "Cellulare" (bisogna avere la chiavetta collegata per poter vedere questa voce)
