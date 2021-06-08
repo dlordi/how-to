@@ -46,7 +46,7 @@
 - usa pulsanti piccoli nella barra delle applicazioni
   - ![](assets/barra-applicazioni.png)
 
-- barra della lingua (negli screen shot è riportata la situazione iniziale che è stata modificata per DISABILITARE gli hotkey per cambio lingua e layout tastiera)
+- barra della lingua
   - ![](assets/barra-lingua-1.png)
   - ![](assets/barra-lingua-2.png)
   - ![](assets/barra-lingua-3.png)
