@@ -56,9 +56,17 @@
 	- nella voce "Dock e barra dei menu" spuntare "Mostra e nascondi automaticamente il Dock"
 - abilitare l'utente `root` (vedi [questo sito](https://support.apple.com/it-it/HT204012))
 - configurazione di Finder (usare `Command+,` per accedere alle impostazioni)
+	- nella scheda "Barra laterale"
+		- togliere la spunta da "Recenti"
+		- togliere la spunta da "AirDrop"
+		- togliere la spunta da "Applicazioni"
+		- spuntare la home directory
+		- togliere la spunta da "iCloud Drive"
+		- togliere la spunta da "Tag recenti"
 	- nella scheda "Avanzate"
 		- spuntare "Mostra tutte le estensioni dei nomi file"
 		- alla voce "Tieni le cartelle in alto:", spuntare "Nelle finestre quando le ordini per nome"
+		- alla voce "Quando esegui una ricerca:", selezionare "Cerca nella cartella attuale"
 	- mettere la visualizzazione dei dettagli
 		- menu "Vista" ➡ "Come elenco"
 	- visualizzare i file nascosti, visualizzare la barra di stato e la barra del percorso
