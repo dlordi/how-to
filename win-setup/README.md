@@ -18,7 +18,7 @@
 
 - impostare schermo secondario come unico attivo quando collegato
 
-- abilitare luce notturna
+- ~~abilitare luce notturna~~
 
 - accedere automaticamente con un utente senza dover inserire la password all'avvio
   ```bat
@@ -29,7 +29,9 @@
 - impostare lo sfondo del desktop
   - [sfondo originale di windows 10](assets/wallpaper-windows-10.jpg)
 
-- impostare il nome delle chiavette USB `J:` e `K:` e il nome dei dischi USB `T:` e `U:`
+- impostare il nome delle dispositivi USB
+  - `J:` e `K:` per le chiavette USB
+  - `T:` e `U:` per i dischi USB
 
 - configurazione esplora risorse
   - ![](assets/esplora-risorse-1.png)
@@ -66,8 +68,6 @@
 
 - creare un collegamento sul desktop alla directory `%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup`
 
-- generare le chiavi SSH per GitHub e GitLab
-
 - installare [Nodepad++](https://notepad-plus-plus.org/downloads/)
   - nelle opzioni, abilitare la chiusura di un file facendo doppio click sul tab
 
@@ -77,7 +77,14 @@
 
 - solo per Windows 10 Home, installare [RDPWrap](https://github.com/stascorp/rdpwrap/releases) per poter accedere al PC con desktop remoto 
 
-- installare Chrome, fare l'accesso per sincronizzare impostazioni e bookmark e impostarlo come browser predefinito
+- installare [executor](https://executor.dk/download)
+  - ripristinare la configurazione, la skin e le keywords
+  - nella configurazione, impostare che venga eseguito all'avvio del sistema
+  - creare collegamento sul desktop
+
+- installare Chrome
+  - fare l'accesso per sincronizzare impostazioni e bookmark
+  - impostarlo come browser predefinito
 
 - impostare Windows Media Player come lettore multimediale predefinito
 
@@ -89,7 +96,7 @@
 
 - installare Windows Terminal dallo store
 
-- configurare l'ambiente di sviluppo, vedere file [DEV-SETUP.md](DEV-SETUP.md)
+- configurare l'ambiente di sviluppo (vedere file [DEV-SETUP.md](DEV-SETUP.md))
 
 - ~~installare [PowerToys](https://github.com/microsoft/PowerToys/releases/)~~
 
