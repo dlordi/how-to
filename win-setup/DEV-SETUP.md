@@ -1,3 +1,5 @@
+- installare python
+
 - generare le chiavi SSH per GitHub e GitLab
 
 - installare **PER TUTTI GLI UTENTI** i font [Source Code Pro](https://fonts.google.com/specimen/Source+Code+Pro) e `Cascadia Code` da chiavetta USB `J:`
