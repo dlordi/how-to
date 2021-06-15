@@ -1,0 +1,4 @@
+- [git](https://git-scm.com/download/win)
+- .NET Core
+- Visual Studio Code
+  - abilitare il sync delle impostazioni/estensioni/ecc... tramite account GitHub
