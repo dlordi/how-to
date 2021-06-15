@@ -6,4 +6,4 @@
   ```
 - installare Visual Studio Code
   - abilitare il sync delle impostazioni/estensioni/ecc... tramite account GitHub
-- installare [.NET Core](https://dotnet.microsoft.com/download/dotnet/)
+- installare [.NET SDK](https://dotnet.microsoft.com/download/dotnet/)
