@@ -66,11 +66,6 @@
 
 - creare un collegamento sul desktop alla directory `%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup`
 
-- se si installa git con chocolatey usare questo comando
-  ```bat
-  choco install git.install --params "/GitOnlyOnPath /NoAutoCrlf /NoShellIntegration /NoGuiHereIntegration /NoShellHereIntegration /SChannel"
-  ```
-
 - generare le chiavi SSH per GitHub e GitLab
 
 - installare [Nodepad++](https://notepad-plus-plus.org/downloads/)
@@ -86,13 +81,15 @@
 
 - impostare Windows Media Player come lettore multimediale predefinito
 
-- installazione CCleaner
+- installazione [CCleaner](https://www.ccleaner.com/it-it/ccleaner/download/standard)
   - in Impostazioni, settare la lingua su Italiano
   - in Pulizia intelligente, disattivare tutte le voci
   - in Avanzate, togliere la spunta da Chiedi se salvare un backup dei problemi del registro
   - in Privacy, togliere la spunta da qualsiasi voce che comporti la condivisione di informazioni
 
 - installare Windows Terminal dallo store
+
+- configurare l'ambiente di sviluppo, vedere file [DEV-SETUP.md](DEV-SETUP.md)
 
 - ~~installare [PowerToys](https://github.com/microsoft/PowerToys/releases/)~~
 
