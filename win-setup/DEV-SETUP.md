@@ -1,4 +1,4 @@
-- installare i font [Source Code Pro](https://fonts.google.com/specimen/Source+Code+Pro) e `Cascadia Code` da chiavetta USB `J:`
+- installare **PER TUTTI GLI UTENTI** i font [Source Code Pro](https://fonts.google.com/specimen/Source+Code+Pro) e `Cascadia Code` da chiavetta USB `J:`
 - installare [git](https://git-scm.com/download/win)
   - se si installa git con chocolatey usare questo comando
   ```bat
