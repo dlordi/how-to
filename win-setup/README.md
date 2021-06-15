@@ -8,7 +8,9 @@
 - disabilitare tutti i suoni
   - ![](assets/suoni.png)
 
-- installare keepass
+- installare [KeePass](KeePass)
+  - installare il plugin [KeePassHttp](https://github.com/pfn/keepasshttp/)
+  - installare il plugin [KeeAnywhere](https://keeanywhere.de/)
 
 - installare [Firefox](https://www.mozilla.org/it/firefox/new/) e accedere con l'account per sincronizzare i bookmark
 
