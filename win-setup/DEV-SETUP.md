@@ -16,3 +16,5 @@
 - installare [.NET SDK](https://dotnet.microsoft.com/download/dotnet/)
 
 - installare WinMerge
+
+- installare [WSL 2](../windows-wsl.md)
