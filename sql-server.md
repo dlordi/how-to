@@ -12,3 +12,8 @@ kill <numero>;
 ALTER TABLE [dbo].[nome_tabella]
   ADD [nome_nuova_colonna] [varchar](1000) NOT NULL DEFAULT('')
 ```
+
+- visualizzare dump esadecimal di una colonna
+```sql
+SELECT CAST(nome_colonna AS VARBINARY(larghezza_colonna)) from nome_tabella
+```
