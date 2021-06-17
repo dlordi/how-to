@@ -14,3 +14,5 @@
   - abilitare il sync delle impostazioni/estensioni/ecc... tramite account GitHub
 
 - installare [.NET SDK](https://dotnet.microsoft.com/download/dotnet/)
+
+- installare WinMerge
