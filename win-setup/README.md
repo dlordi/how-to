@@ -98,6 +98,10 @@
 
 - installare Windows Terminal dallo store
 
+- installare notepad++
+
+- installare 7-zip
+
 - configurare l'ambiente di sviluppo (vedere file [DEV-SETUP.md](DEV-SETUP.md))
 
 - ~~installare [PowerToys](https://github.com/microsoft/PowerToys/releases/)~~
