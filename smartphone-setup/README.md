@@ -117,6 +117,7 @@
 - iFob Control
   - Farsi abilitare da Giulio
   - Abilitare accesso con impronta digitale
+- ~~IO~~
 - INPS Mobile
 - iPatente
 - Keepass2Android Offline
@@ -183,6 +184,7 @@
 - ~~Trenitalia~~
 - Twitch
 - Twitter
+- tpMiFi (per controllare la saponetta wifi)
 - ~~UfficioPostale~~
 - VLC
   - video sempre in orizzontale
