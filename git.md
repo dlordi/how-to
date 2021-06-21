@@ -33,7 +33,7 @@ git push -u origin main
 ```
 - a questo punto occorre cancellare anche il branch `master` remoto
 - per farlo bisogna prima impostare un altro branch come quello default
-  - per github: ...
+  - per github: Settings -> Branches -> Switch to another branch
   - per gitlab: Settings -> Repository -> Default branch
     - se protetta, si può cancellare solo da interfaccia web andando su Repository -> Branches
 ```sh
