@@ -29,5 +29,7 @@ lxrun /uninstall /full
 lxrun /install /y
 ```
 
-# ~~CentWSL~~
-- [riferimento principale](https://github.com/yuk7/CentWSL)
+# Distribuzioni basate su RedHat
+- https://github.com/mishamosher/CentOS-WSL (CentOS 8 Stream)
+- https://github.com/yosukes-dev/RHWSL
+- ~~https://github.com/yuk7/CentWSL~~ (non più manutenuto)
