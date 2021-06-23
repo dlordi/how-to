@@ -81,6 +81,7 @@
 
 - installare [executor](https://executor.dk/download)
   - ripristinare la configurazione, la skin e le keywords
+    - è sufficiente il file `executor.ini`
   - nella configurazione, impostare che venga eseguito all'avvio del sistema
   - creare collegamento sul desktop
 
@@ -105,7 +106,5 @@
 - configurare l'ambiente di sviluppo (vedere file [DEV-SETUP.md](DEV-SETUP.md))
 
 - ~~installare [PowerToys](https://github.com/microsoft/PowerToys/releases/)~~
-
-- ~~abilitare wsl2 (Sottosistema Windows per Linux)~~
 
 - ~~installare edge chromium~~
